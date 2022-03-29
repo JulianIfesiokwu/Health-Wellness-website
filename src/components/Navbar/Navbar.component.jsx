@@ -7,15 +7,13 @@ const Navbar = () => {
     return (
         <StyledNavbar>
             <LogoContainer>
-                <img src={logo} alt="logo" />
+                <img src="" alt="logo" />
             </LogoContainer>
             <StyledList>
                 <li>Home</li>
-                <li>Portfolio</li>
                 <li>Services</li>
-                <li>Prices</li>
-                <li>Team</li>
-                <li>Contact</li>
+                <li>Book a session</li>
+                <li>Contact Us</li>
             </StyledList>
         </StyledNavbar>
     )

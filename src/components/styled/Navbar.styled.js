@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.header`
-    font size: 1rem;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: #9c90b5;
-    color: #93C572;
+  padding: 2rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: #93c572;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 `;
 
 export default StyledNavbar;

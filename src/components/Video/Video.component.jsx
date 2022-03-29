@@ -6,7 +6,7 @@ import { useRef } from "react";
 const BackgroundVideo = () => {
     const videoRef = useRef()
     const setPlayBack = () => {
-        videoRef.current.setPlayBack = 0.5
+        videoRef.current.playbackRate = 0.5
     }
 
     return (
