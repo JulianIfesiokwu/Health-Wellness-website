@@ -13,7 +13,7 @@ const BackgroundVideo = () => {
         <StyledVideoContainer>
             <video ref={videoRef}
             onCanPlay={() => setPlayBack()}
-            autoPlay='autoplay' loop='loop' muted playBack>
+            autoPlay='autoplay' loop='loop' muted>
                 <source src={Video} type="video/mp4" />
             </video>
         </StyledVideoContainer>
