@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledServices = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 3rem 4rem;
   position: relative;
 
   .title {

@@ -9,7 +9,7 @@ const StyledNavbar = styled.header`
   color: #93c572;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10000;
 `;
 
 export default StyledNavbar;
