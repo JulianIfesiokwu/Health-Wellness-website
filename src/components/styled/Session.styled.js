@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledSession = styled.section`
   text-align: center;
   background-color: #155bd5;
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
   color: white;
 
   .title {
@@ -16,6 +16,10 @@ const StyledSession = styled.section`
     margin: 1rem auto;
     font-size: 1rem;
     line-height: 25px;
+  }
+
+  Button {
+    margin-bottom: 2rem;
   }
 `;
 
