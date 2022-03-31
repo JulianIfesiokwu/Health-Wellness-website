@@ -27,6 +27,12 @@ const StyledCard = styled.div`
       0px 8px 16px rgba(96, 97, 112, 0.16);
     cursor: pointer;
   }
+
+  @media (max-width: 425px) {
+    img {
+      height: 200px;
+    }
+  }
 `;
 
 export default StyledCard;

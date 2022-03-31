@@ -26,6 +26,27 @@ const StyledServices = styled.section`
     justify-content: space-between;
     gap: 3%;
   }
+
+  @media (max-width: 425px) {
+    .offerings {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    .title {
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        width: 75%;
+      }
+    }
+
+    .offerings {
+      flex-direction: column;
+    }
+  }
 `;
 
 export default StyledServices;

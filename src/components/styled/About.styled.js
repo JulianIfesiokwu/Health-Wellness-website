@@ -41,6 +41,52 @@ const StyledAbout = styled.section`
       }
     }
   }
+
+  @media (max-width: 425px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+
+    .img-container {
+      width: 100%;
+    }
+
+    .about-info {
+      width: 100%;
+      text-align: center;
+
+      .info-summary {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    .short {
+      display: flex;
+      align-items: center;
+      margin: 2rem auto;
+
+      .controls {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+        // remove bottom margin
+        margin-bottom: 0;
+        Button {
+          margin-bottom: 1rem;
+        }
+      }
+      .summarised {
+        text-align: justify;
+        line-height: 25px;
+        flex: 2;
+      }
+    }
+  }
 `;
 
 export default StyledAbout;

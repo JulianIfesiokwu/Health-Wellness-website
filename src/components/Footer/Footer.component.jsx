@@ -1,5 +1,6 @@
 import Button from "../styled/Button.styled";
 import StyledFooter from "../styled/Footer.styled";
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -8,6 +9,7 @@ const Footer = () => {
                 <img src="" alt="" />
                 <p>Making the world a better place through constructing elegant hierarchies.</p>
                 <p>&copy; 2022</p>
+                <p className="social"><FaFacebook size='20'/> <FaInstagram size='20'/> <FaTwitter size='20'/> <FaWhatsapp size='20'/></p>
             </article>
             <article className="column">
                 <p>Solutions</p>
@@ -24,7 +26,6 @@ const Footer = () => {
                 <p>Insights</p>
             </article>
             <article className="column">
-                <p>Subscribe</p>
                 <p>Subscribe to our latest newspaper and updates</p>
                 <form>
                     <input type='email' placeholder='subscribe' />

@@ -12,7 +12,8 @@ const Navbar = () => {
     return (
         <StyledNavbar>
             <LogoContainer>
-                <img src="" alt="logo" />
+                <img src={logo} alt="logo" />
+                <p>Health & Wellness</p>
             </LogoContainer>
             <StyledList>
                 <li>Home</li>
@@ -21,8 +22,11 @@ const Navbar = () => {
                 <li>Book a session</li>
                 <li>Contact Us</li>
             </StyledList>
-            {showAside ? <AiOutlineMenuUnfold size='30' color='white' /> : <AiOutlineMenuFold size='30' color='white' />}
+            <div className="menu">
+                            {showAside ? <AiOutlineMenuUnfold size='30' color='white' /> : <AiOutlineMenuFold size='30' color='white' />}
             {/* <AiOutlineMenuFold size='30' color='white' onClick={() => setShowAside(!showAside)}/> */}
+            </div>
+
             
         </StyledNavbar>
     )

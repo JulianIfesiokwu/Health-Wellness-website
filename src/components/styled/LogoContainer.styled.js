@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 const LogoContainer = styled.div`
-  width: 100px;
-  height: 25px;
   img {
-    width: 100%;
-    height: auto;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
-    vertical-align: bottom;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+  }
+  p {
+    display: inline-block;
+    color: white;
+    font-size: 1.1rem;
   }
 `;
 

@@ -10,11 +10,11 @@ const Contact = () => {
                 <p><AiFillPhone size='25'/> 0984537278623</p>
                 <p><MdEmail size='25'/> ourCompanyEmail@gmail.com</p>
                 <p><MdLocationOn size='25'/> 175 5th Ave, New York, NY 10010 United States</p>
-                <p><MdSchedule size='25'/> 10 AM - 5:30 PM</p>
-                <p> 24 Hours / 7 Days Open</p>
+                <p><MdSchedule size='25'/> 9 AM - 5:30 PM</p>
+                <p>Open: Weekdays</p>
             </div>
             <form className="form">
-                <p>Get in Touch</p>
+                <h3>Get in Touch</h3>
                 <article className="row">
                     <input type="text" placeholder="name"/>
                     <input type="email" placeholder="email"/>
@@ -23,6 +23,7 @@ const Contact = () => {
                     <input type="number" placeholder="phone"/>
                     <input type="text" placeholder="subject"/>
                 </article>
+                <textarea rows='6'></textarea>
                 <Button>send</Button>
             </form>
 

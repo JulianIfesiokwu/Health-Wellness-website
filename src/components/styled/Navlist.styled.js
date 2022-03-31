@@ -23,6 +23,10 @@ const StyledList = styled.ul`
     transform: scaleX(1);
     transform-origin: 0% 50%;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default StyledList;

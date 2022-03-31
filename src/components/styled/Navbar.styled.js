@@ -10,6 +10,22 @@ const StyledNavbar = styled.header`
   position: fixed;
   top: 0;
   z-index: 10000;
+
+  LogoContainer {
+    img {
+      display: none;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: block;
+    }
+  }
 `;
 
 export default StyledNavbar;

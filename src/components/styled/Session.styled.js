@@ -12,7 +12,7 @@ const StyledSession = styled.section`
     font-size: 2rem;
   }
   .more {
-    width: 50%;
+    width: 63%;
     margin: 1rem auto;
     font-size: 1rem;
     line-height: 25px;
@@ -20,6 +20,19 @@ const StyledSession = styled.section`
 
   Button {
     margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      width: 85%;
+      margin: 2rem auto;
+    }
+    .more {
+      width: 85%;
+      margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 25px;
+    }
   }
 `;
 
