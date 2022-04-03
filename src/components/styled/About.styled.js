@@ -42,10 +42,6 @@ const StyledAbout = styled.section`
     }
   }
 
-  @media (max-width: 425px) {
-    flex-direction: column-reverse;
-  }
-
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     padding-bottom: 0;
@@ -84,6 +80,27 @@ const StyledAbout = styled.section`
         text-align: justify;
         line-height: 25px;
         flex: 2;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding: 2rem;
+
+    .about-info {
+      .short {
+        display: flex;
+        flex-direction: column;
+        .controls {
+          padding: 0;
+          Button {
+            margin-right: 0;
+          }
+        }
+      }
+      .info-summary {
+        font-size: 1.8rem;
+        width: 90%;
       }
     }
   }

@@ -28,7 +28,12 @@ const StyledCard = styled.div`
     cursor: pointer;
   }
 
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+
   @media (max-width: 425px) {
+    margin-bottom: 1rem;
     img {
       height: 200px;
     }

@@ -34,6 +34,12 @@ const StyledSession = styled.section`
       line-height: 25px;
     }
   }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export default StyledSession;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledList = styled.ul`
   display: flex;
   list-style-type: none;
+  margin-top: 0.25rem;
   li {
     margin-right: 1.5rem;
     font-size: 1.2rem;
@@ -24,8 +25,12 @@ const StyledList = styled.ul`
     transform-origin: 0% 50%;
   }
 
-  @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 812px) {
+    flex-direction: column;
+    position: absolute;
+    right: 0.5rem;
+    text-align: end;
+    margin-top: 0;
   }
 `;
 

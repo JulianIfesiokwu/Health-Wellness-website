@@ -27,11 +27,6 @@ const StyledServices = styled.section`
     gap: 3%;
   }
 
-  @media (max-width: 425px) {
-    .offerings {
-      flex-direction: column;
-    }
-  }
   @media (max-width: 768px) {
     .title {
       h2 {
@@ -46,6 +41,10 @@ const StyledServices = styled.section`
     .offerings {
       flex-direction: column;
     }
+  }
+
+  @media (max-width: 425px) {
+    padding: 2rem;
   }
 `;
 

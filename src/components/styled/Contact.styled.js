@@ -5,7 +5,6 @@ const StyledContact = styled.section`
   display: flex;
   justify-content: center;
   align-items: space-between;
-  justify-content: center;
 
   .address {
     display: flex;
@@ -54,6 +53,33 @@ const StyledContact = styled.section`
       :focus {
         box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
           0px 8px 16px rgba(96, 97, 112, 0.16);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem;
+
+    .address {
+      text-align: center;
+      width: 100%;
+
+      p {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .form {
+      width: 100%;
+      text-align: center;
+
+      .row {
+        input {
+          width: 100%;
+          display: block;
+        }
       }
     }
   }

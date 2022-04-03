@@ -9,12 +9,18 @@ const StyledFooter = styled.footer`
   text-align: start;
 
   .column {
+    .heading {
+      font-size: 1.2rem;
+      color: #808080;
+    }
+
     display: flex;
     flex-direction: column;
     flex: 1;
 
     p {
       margin-bottom: 1rem;
+      font-size: 0.9rem;
     }
 
     form {
@@ -40,6 +46,20 @@ const StyledFooter = styled.footer`
       p {
         margin-bottom: 0.5rem;
       }
+  }
+
+  @media (max-width: 426px) {
+    flex-direction: column;
+    text-align: center;
+
+    .column {
+      p {
+        margin-bottom: 1rem;
+      }
+      .social {
+        justify-content: center;
+      }
+    }
   }
 
 `;

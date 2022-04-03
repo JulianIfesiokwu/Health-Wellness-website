@@ -12,14 +12,14 @@ const Footer = () => {
                 <p className="social"><FaFacebook size='20'/> <FaInstagram size='20'/> <FaTwitter size='20'/> <FaWhatsapp size='20'/></p>
             </article>
             <article className="column">
-                <p>Solutions</p>
+                <p className="heading">Solutions</p>
                 <p>Marketing</p>
                 <p>Analytics</p>
                 <p>Commerce</p>
                 <p>Insights</p>
             </article>
             <article className="column">
-                <p>Support</p>
+                <p className="heading">Support</p>
                 <p>Marketing</p>
                 <p>Analytics</p>
                 <p>Commerce</p>

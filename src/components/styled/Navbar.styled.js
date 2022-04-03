@@ -6,24 +6,39 @@ const StyledNavbar = styled.header`
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  color: #93c572;
+  color: white;
   position: fixed;
   top: 0;
   z-index: 10000;
 
-  LogoContainer {
-    img {
-      display: none;
-    }
-
-    .menu {
-      display: none;
-    }
+  .menu {
+    display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 812px) {
     .menu {
-      display: block;
+      display: inline;
+      position: relative;
+      right: 1.5rem;
+      cursor: pointer;
+
+      li {
+        margin-right: 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  @media (max-width: 426px) {
+    .menu {
+      display: inline;
+      position: relative;
+      right: 1.5rem;
+      cursor: pointer;
+
+      li {
+        margin-right: 0;
+        font-size: 1rem;
+      }
     }
   }
 `;
