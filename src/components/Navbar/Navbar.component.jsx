@@ -8,36 +8,39 @@ import logo from '../../logo.png'
 
 const Navbar = () => {
     const [showAside, setShowAside] = useState(false)
-    // useEffect((
-    //     window.scroll(() => {
-    //         const scroll = window.scrollTop()
-    //         if(scroll > 300) {
-    //             console.log('yes')
-    //         }
-    //     })
-    // ), [])
-    
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if(window.scrollY > 500) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+    useEffect(() => {
+        changeBackground()
+        // adding the change background when user scroll
+        window.addEventListener('scroll', changeBackground)
+    })    
 
     return (
-        <StyledNavbar>
+        <StyledNavbar className={navbar ? 'navbar active' : 'navbar no-background'}>
             <LogoContainer>
                 <img src={logo} alt="logo" />
                 <p>Health & Wellness</p>
             </LogoContainer>
+            <div className="menu" onClick={() => {setShowAside(!showAside)}}>
+                {showAside ? <AiOutlineMenuUnfold size='30'/> : <AiOutlineMenuFold size='30'/>}                    
+            </div>
             <StyledList >
-                <div className="menu" onClick={() => {setShowAside(!showAside)}}>
-                    {showAside ? <AiOutlineMenuUnfold size='30'/> : <AiOutlineMenuFold size='30'/>}                     
-
-                {showAside && 
-                    <>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Book a session</li>
-                        <li>Contact Us</li>
-                    </>
-                }
-                </div>
+                {/* {showAside &&
+                <> */}
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Book a session</li>
+                <li>Contact Us</li>
+                {/* </> */}
             </StyledList>
          
         </StyledNavbar>

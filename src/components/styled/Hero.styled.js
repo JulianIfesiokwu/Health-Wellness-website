@@ -26,7 +26,7 @@ const StyledHero = styled.div`
     background-color: #155bd5;
     position: absolute;
     left: 4rem;
-    top: 65%;
+    top: 75%;
     z-index: 7;
     font-size: 1.3rem;
     letter spacing: 3px;
@@ -45,6 +45,40 @@ const StyledHero = styled.div`
     height: 100%;
     opacity: 0.7;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 426px) {
+    h1 {
+      color: white;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 6;
+      font-size: 1.5rem;
+    }
+
+    p {
+    color: white;
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    font-size: 0.7rem;
+    line-height: 15px;
+    text-align: center;
+  }
+    Button {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    font-size: 0.7rem;
+    letter spacing: 3px;
+    line-height: 30px;
   }
 `;
 

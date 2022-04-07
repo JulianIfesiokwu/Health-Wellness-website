@@ -12,6 +12,9 @@ const StyledList = styled.ul`
     padding-bottom: 0.5rem;
     cursor: pointer;
   }
+  li:nth-last-child(1) {
+    margin-right: 0;
+  }
   li::after {
     display: block;
     content: "";
@@ -26,9 +29,11 @@ const StyledList = styled.ul`
   }
 
   @media (max-width: 812px) {
+    display: none;
     flex-direction: column;
     position: absolute;
     right: 0.5rem;
+    top: 4.5rem;
     text-align: end;
     margin-top: 0;
   }

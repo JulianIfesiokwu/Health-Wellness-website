@@ -84,7 +84,7 @@ const StyledAbout = styled.section`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     padding: 2rem;
 
     .about-info {

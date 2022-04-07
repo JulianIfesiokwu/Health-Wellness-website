@@ -17,7 +17,6 @@ const StyledServices = styled.section`
   }
 
   h2 {
-    color: green;
     font-size: 2.5rem;
   }
 
@@ -43,7 +42,7 @@ const StyledServices = styled.section`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     padding: 2rem;
   }
 `;

@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.header`
-  padding: 2rem 2rem;
+  padding: 1rem 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
   color: white;
   position: fixed;
   top: 0;
@@ -15,11 +14,13 @@ const StyledNavbar = styled.header`
     display: none;
   }
 
+  .links-container {
+  }
+
   @media (max-width: 812px) {
     .menu {
       display: inline;
       position: relative;
-      right: 1.5rem;
       cursor: pointer;
 
       li {
@@ -30,14 +31,9 @@ const StyledNavbar = styled.header`
   }
   @media (max-width: 426px) {
     .menu {
-      display: inline;
-      position: relative;
-      right: 1.5rem;
-      cursor: pointer;
-
       li {
-        margin-right: 0;
         font-size: 1rem;
+        padding-bottom: 0.2rem;
       }
     }
   }
