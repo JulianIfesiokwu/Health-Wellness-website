@@ -33,14 +33,11 @@ const Navbar = () => {
                 {showAside ? <AiOutlineMenuUnfold size='30'/> : <AiOutlineMenuFold size='30'/>}                    
             </div>
             <StyledList >
-                {/* {showAside &&
-                <> */}
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Book a session</li>
                 <li>Contact Us</li>
-                {/* </> */}
             </StyledList>
          
         </StyledNavbar>

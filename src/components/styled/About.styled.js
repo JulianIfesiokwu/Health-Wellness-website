@@ -34,11 +34,27 @@ const StyledAbout = styled.section`
     }
     .controls {
       margin-bottom: 1rem;
-      padding: 1rem 1rem 1rem 0;
+      padding: 1rem;
+      background-color: #efefef;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
 
       Button {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+
+        &:hover {
+          background-color: #155bd5;
+          color: white;
+        }
       }
+    }
+
+    .summarised {
+      line-height: 25px;
     }
   }
 

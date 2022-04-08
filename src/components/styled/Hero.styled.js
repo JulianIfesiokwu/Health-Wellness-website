@@ -34,6 +34,8 @@ const StyledHero = styled.div`
     text-align: start;
     &:hover {
       cursor: pointer;
+      color: #155bd5;
+      background-color: white;
     }
   }
   &::after {

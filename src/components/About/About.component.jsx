@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import StyledAbout from "../styled/About.styled";
 import Button from "../styled/Button.styled";
 import OurStory from '../../assets/images/our-story-image1.jpg'
+import { aboutDetails } from "../../data";
 
 const About = () => {
+    const [paragraph, setParagraph] = useState(aboutDetails[0].paragrapgh)
+
     return (
+        <>
         <StyledAbout>
             <div className="img-container">
                 <img src={OurStory} alt="" />
@@ -14,17 +18,22 @@ const About = () => {
                 <p className="info-summary">Our team comes with the experience and knowledge</p>
                 <div className="short">
                     <div className="controls">
-                        <Button>Who We Are</Button>
-                        <Button>Our Vision</Button>
-                        <Button>Our History</Button>
+                        {aboutDetails.map((item, index) => {
+                            const {id, title} = item
+                            return (
+                            <Button key={id} 
+                            onClick={() => {
+                                setParagraph(aboutDetails[index].paragrapgh)}}>{title}</Button>
+                            )
+                        })}
                     </div>
                     <p className="summarised">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.
-                        There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour.
+                        {paragraph}
                     </p>
                 </div>
             </div>
         </StyledAbout>
+        </>
 
     )
 }
