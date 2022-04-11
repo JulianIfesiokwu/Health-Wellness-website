@@ -3,6 +3,7 @@ import StyledList from "../styled/Navlist.styled.js";
 import LogoContainer from "../styled/LogoContainer.styled.js";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 import logo from '../../logo.png'
 
@@ -33,11 +34,11 @@ const Navbar = () => {
                 {showAside ? <AiOutlineMenuUnfold size='30'/> : <AiOutlineMenuFold size='30'/>}                    
             </div>
             <StyledList >
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Book a session</li>
-                <li>Contact Us</li>
+                <NavLink to='/' style={({ isActive }) => { return { color: isActive ? "#155bd5" : "white" };}}>Home</NavLink>
+                <NavLink to='/about'style={({ isActive }) => { return { color: isActive ? "#155bd5" : "white" };}}>About Us</NavLink>
+                <NavLink to='/Services' style={({ isActive }) => { return { color: isActive ? "#155bd5" : "white" };}}>Services</NavLink>
+                <NavLink to='/Session' style={({ isActive }) => { return { color: isActive ? "#155bd5" : "white" };}}>Book a session</NavLink>
+                <NavLink to='/Contact' style={({ isActive }) => { return { color: isActive ? "#155bd5" : "white" };}}>Contact Us</NavLink>
             </StyledList>
          
         </StyledNavbar>

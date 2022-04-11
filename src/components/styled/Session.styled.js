@@ -22,8 +22,15 @@ const StyledSession = styled.section`
   }
 
   Button {
-    margin-bottom: 2rem;
-  }
+    margin-right: 0.5rem;
+    background-color: #155bd5;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      color: #155bd5;
+      background-color: white;
+    }
 
   @media (max-width: 768px) {
     .title {

@@ -4,6 +4,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
 }
 
 code {
@@ -27,7 +28,8 @@ html {
   background-color: transparent;
 }
 
-.active {
+.active-btn {
   background-color: #155bd5;
   color: black;
 }
+
