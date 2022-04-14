@@ -30,6 +30,7 @@ const StyledNavbar = styled.header`
     }
   }
   @media (max-width: 426px) {
+    padding: 1rem 2rem 0 2rem;
     .menu {
       li {
         font-size: 1rem;

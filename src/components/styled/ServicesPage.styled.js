@@ -54,15 +54,27 @@ width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+    @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+     width: 60%;
+    }
+  }
+
   @media (max-width: 426px) {
     h1 {
       color: white;
       position: absolute;
       top: 55%;
       left: 50%;
+      width: 90%;
       transform: translate(-50%, -50%);
       z-index: 6;
       font-size: 1.5rem;
+      text-align: center;
     }
 
     p {

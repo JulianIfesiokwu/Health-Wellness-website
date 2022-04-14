@@ -54,6 +54,27 @@ const AllServices = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .service-card {
+      flex-direction: column;
+      padding: 0;
+
+      .img-container {
+        width: 100%;
+
+        img {
+          display: block;
+        }
+      }
+
+      .details {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export default AllServices;

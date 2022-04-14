@@ -18,7 +18,7 @@ const OneService = ({massage}) => {
             <p>Max-duration: {duration} hour(s)</p>
             <p>Locations available: {available}</p>
             <p className="massage-type">{type.toUpperCase()}</p>
-            <p>{showText ? desc : desc.slice(0, 200).concat('...  ') }{<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
+            <p>{showText ? desc : desc.slice(0, 200).concat('...  ') }  {<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
             <Button>Schedule</Button>
         </div>
     </div>
