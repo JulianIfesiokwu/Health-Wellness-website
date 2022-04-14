@@ -3,8 +3,10 @@ import ServicesPageStyled from "../components/styled/ServicesPage.styled"
 import Button from "../components/styled/Button.styled"
 import AllServices from "../components/styled/AllServices.styled"
 import { massageTypes } from '../data'
+import OneService from "../components/OneService/OneService.component"
 
 const ServicesPage = () => {
+
     return (
         <>
         <ServicesPageStyled>
@@ -15,20 +17,9 @@ const ServicesPage = () => {
         </ServicesPageStyled>
         <AllServices>
             {massageTypes.map((massage) => {
-                const {name,id,img,duration,available,type} = massage
+                const {id} = massage
                 return (
-                    <div className="service-card" key={id}>
-                        <div className="img-container">
-                            <img src={img} alt={name} />
-                        </div>
-                        <div className="details">
-                            <h4>{name}</h4>
-                            <p>{duration} hours</p>
-                            <p>{available}</p>
-                            <p>{type}</p>
-
-                        </div>
-                    </div>
+                    <OneService key={id} massage={massage} />
                 )
             })}
         </AllServices>
