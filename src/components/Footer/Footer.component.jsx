@@ -28,7 +28,7 @@ const Footer = () => {
             <article className="column">
                 <p>Subscribe to our latest newspaper and updates</p>
                 <form>
-                    <input type='email' placeholder='subscribe' />
+                    <input type='email' placeholder='email address' />
                     <Button>subscribe</Button>
                 </form>
             </article>

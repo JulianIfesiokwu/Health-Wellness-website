@@ -84,3 +84,38 @@ export const massageTypes = [
     desc: "Lymphatic drainage massage, also known as manual lymphatic drainage (MLD), is a type of gentle massage that encourages the lymph fluids to circulate through the body. The lymphatic system helps remove toxins, and improved circulation can help with a number of conditions, including lymphedema, fibromyalgia, edema, skin disorders, fatigue, insomnia, stress, digestive problems, arthritis, and migraine. You shouldn’t receive lymphatic drainage massage if you have any of the following conditions congestive heart failure, history of blood clots or stroke, current infection, liver problems, kidney problems. Always talk with your doctor before you try it. These massages usually last 60 minutes or longer.",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "August Black",
+    img: "https://media.istockphoto.com/photos/headshot-portrait-of-smiling-ethnic-businessman-in-office-picture-id1300512215?b=1&k=20&m=1300512215&s=170667a&w=0&h=LsZL_-vvAHB2A2sNLHu9Vpoib_3aLLkRamveVW3AGeQ=",
+    occupation: "Communications Manager",
+    quote:
+      "On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can",
+  },
+  {
+    id: 2,
+    name: "Uncle Ruckus",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIBKhqPYuDHiXT2CGVfEvmS4h7L-gUbBr3bQ&usqp=CAU",
+    occupation: "House Keeper",
+    quote:
+      "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    id: 3,
+    name: "Fanny Mingy",
+    img: "https://image.shutterstock.com/mosaic_250/2780032/1836020740/stock-photo-profile-picture-of-smiling-millennial-asian-girl-isolated-on-grey-wall-background-look-at-camera-1836020740.jpg",
+    occupation: "Accountant",
+    quote:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+  },
+  {
+    id: 4,
+    name: "Rafael Stewart",
+    img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    occupation: "Web Developer",
+    quote:
+      "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33.",
+  },
+];
