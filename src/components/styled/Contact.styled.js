@@ -3,9 +3,14 @@ import styled from "styled-components";
 const StyledContact = styled.section`
   padding: 2rem 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: space-between;
 
+  .address-details {
+    display: flex;
+    align-items: center;
+  }
   .address {
     display: flex;
     flex-direction: column;
@@ -14,6 +19,11 @@ const StyledContact = styled.section`
     p {
       margin-bottom: 2rem;
       width: 70%;
+
+      .icon {
+        vertical-align: middle;
+        color: #155bd5;
+      }
     }
   }
   .form {

@@ -12,9 +12,19 @@ const StyledCard = styled.div`
     margin-bottom: 1rem;
   }
 
+  h3 {
+    font-family: "Open sans", "sans-serif";
+    font-weight: 300;
+    color: #155bd5;
+  }
+
   img {
     border-radius: 8px;
     width: 100%;
+  }
+
+  p {
+    font-family: "Open sans", "sans-serif";
   }
 
   Button {

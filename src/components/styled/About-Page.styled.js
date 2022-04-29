@@ -94,7 +94,7 @@ const StyledAboutPage = styled.div`
       .right-btn {
         position: relative;
         top: 9rem;
-        left: 45rem;
+        left: 43rem;
         cursor: pointer;
       }
 

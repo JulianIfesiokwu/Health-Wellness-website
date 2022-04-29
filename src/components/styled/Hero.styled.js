@@ -3,22 +3,26 @@ import styled from "styled-components";
 const StyledHero = styled.div`
   width: 100%;
   h1 {
+    width: 60%;
     color: white;
     position: absolute;
     left: 4rem;
-    top: 40%;
+    top: 35%;
     z-index: 6;
-    font-size: 42px;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 65px;
   }
   p {
     color: white;
     position: absolute;
     left: 4rem;
     width: 40%;
-    top: 50%;
+    top: 60%;
     z-index: 7;
-    font-size: 1.2rem;
-    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 35px;
     text-align: start;
   }
   Button {
@@ -28,10 +32,12 @@ const StyledHero = styled.div`
     left: 4rem;
     top: 75%;
     z-index: 7;
-    font-size: 1.3rem;
     letter spacing: 3px;
-    line-height: 30px;
     text-align: start;
+
+    .icon {
+      vertical-align: middle;
+    }
     &:hover {
       cursor: pointer;
       color: #155bd5;
@@ -47,6 +53,30 @@ const StyledHero = styled.div`
     height: 100%;
     opacity: 0.7;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+    width: 60%;
+      font-size: 3rem;
+      line-height: 45px;
+    }
+
+    p {
+    z-index: 7;
+    font-size: 1.2rem;
+    line-height: 25px;
+    width: 50%;
+    }
+    Button {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    font-size: 0.7rem;
+    letter spacing: 3px;
+  }
   }
 
   @media (max-width: 426px) {

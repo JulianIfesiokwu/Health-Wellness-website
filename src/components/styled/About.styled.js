@@ -10,7 +10,7 @@ const StyledAbout = styled.section`
     width: 55%;
     img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 5px;
     }
   }
 
@@ -25,17 +25,23 @@ const StyledAbout = styled.section`
 
     .info-title {
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.125rem;
+      color: #155bd5;
+      font-weight: 600;
+      font-family: "Open Sans", "sans-serif";
     }
 
     .info-summary {
-      font-size: 2.2rem;
-      font-weight: 600;
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: "Open Sans", "sans-serif";
+      line-height: 40px;
     }
+
     .controls {
       margin-bottom: 1rem;
       padding: 1rem;
-      background-color: #efefef;
+      background-color: #155bd5;
       border-radius: 8px;
       display: flex;
       justify-content: space-between;
@@ -43,18 +49,21 @@ const StyledAbout = styled.section`
       Button {
         margin-right: 0.5rem;
         background-color: white;
-        color: black;
-        font-weight: bold;
+        color: #155bd5;
+        font-size: 1rem;
+        font-weight: 600;
 
         &:hover {
           background-color: #155bd5;
           color: white;
+          border: 1px solid white;
         }
       }
     }
 
     .summarised {
-      line-height: 25px;
+      font-family: "Open Sans", "sans-serif";
+      line-height: 30px;
     }
   }
 

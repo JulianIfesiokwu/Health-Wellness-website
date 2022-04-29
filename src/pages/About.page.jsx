@@ -15,6 +15,8 @@ const AboutPage = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
+    console.log(current)
+
     return (
         <StyledAboutPage>
             <div className="heading">
@@ -41,6 +43,7 @@ const AboutPage = () => {
                 {
                     testimonials.map((testimony, index) => {
                         const {id,name,img,quote,occupation} = testimony
+                        
                         return (
                             <div className={index === current ? 'textimonial-container slide-active' : 'textimonial-container slide'} key={id}>
                                 <div className="img-container">

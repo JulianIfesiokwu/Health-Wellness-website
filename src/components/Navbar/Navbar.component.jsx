@@ -3,7 +3,7 @@ import StyledList from "../styled/Navlist.styled.js";
 import LogoContainer from "../styled/LogoContainer.styled.js";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import logo from '../../logo.png'
 
@@ -26,19 +26,21 @@ const Navbar = () => {
 
     return (
         <StyledNavbar className={navbar ? 'navbar nav-active' : 'navbar no-background'}>
+            <Link to='/'>
             <LogoContainer>
                 <img src={logo} alt="logo" />
                 <p>Health & Wellness</p>
             </LogoContainer>
+            </Link>
             <div className="menu" onClick={() => {setShowAside(!showAside)}}>
                 {showAside ? <AiOutlineMenuUnfold size='30'/> : <AiOutlineMenuFold size='30'/>}                    
             </div>
             <StyledList >
-                <NavLink to='/' style={({ isActive }) => { return { color: isActive ? "red" : "white" };}}>Home</NavLink>
-                <NavLink to='/about' style={({ isActive }) => { return { color: isActive ? "red" : "white" };}}>About Us</NavLink>
-                <NavLink to='/services' style={({ isActive }) => { return { color: isActive ? "red" : "white" };}}>Services</NavLink>
-                <NavLink to='/session' style={({ isActive }) => { return { color: isActive ? "red" : "white" };}}>Book a session</NavLink>
-                <NavLink to='/contact' style={({ isActive }) => { return { color: isActive ? "red" : "white" };}}>Contact Us</NavLink>
+                <NavLink to='/' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Home</NavLink>
+                <NavLink to='/about' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>About Us</NavLink>
+                <NavLink to='/services' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Services</NavLink>
+                <NavLink to='/sessions' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Book a session</NavLink>
+                <NavLink to='/contact' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Contact Us</NavLink>
             </StyledList>
          
         </StyledNavbar>

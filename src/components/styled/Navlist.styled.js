@@ -7,7 +7,7 @@ const StyledList = styled.ul`
 
   a {
     margin-right: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
     font-weight: 400;
     padding-bottom: 0.5rem;
