@@ -1,6 +1,7 @@
 import Button from "../styled/Button.styled";
 import StyledFooter from "../styled/Footer.styled";
 import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { ImCircleRight } from "react-icons/im";
 
 const Footer = () => {
     return (
@@ -29,7 +30,7 @@ const Footer = () => {
                 <p>Subscribe to our latest newspaper and updates</p>
                 <form>
                     <input type='email' placeholder='email address' />
-                    <Button>subscribe</Button>
+                    <Button>subscribe <ImCircleRight className="icon"/></Button>
                 </form>
             </article>
 

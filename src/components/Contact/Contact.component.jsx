@@ -2,32 +2,11 @@ import StyledContact from "../styled/Contact.styled";
 import Button from "../styled/Button.styled";
 import { MdEmail,MdLocationOn,MdSchedule } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
-import ContactLanding from "../styled/ContactPage.styled";
+import { ImCircleRight } from "react-icons/im";
 
 const Contact = () => {
     return (
         <>
-        <ContactLanding>
-            <h1>We have branches all over the globe ensuring a quality life and rest.</h1>
-            <div className="all-locations">
-                <div className="country">
-                    <p className="city">Lagos, Nigeria</p>
-                    <p className="address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse voluptas corporis facilis cumque maiores itaque mollitia. </p>
-                    <p className="telephone">0900 555 555</p>
-                </div>
-                <div className="country">
-                    <p className="city">New York, USA</p>
-                    <p className="address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse voluptas corporis facilis cumque maiores itaque mollitia. </p>
-                    <p className="telephone">0900 555 555</p>
-                </div>
-                <div className="country">
-                    <p className="city">London, United Kingdom</p>
-                    <p className="address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse voluptas corporis facilis cumque maiores itaque mollitia. </p>
-                    <p className="telephone">0900 555 555</p>
-                </div>
-
-            </div>
-            </ContactLanding>
         <StyledContact>
             <div className="address-details">
             <div className="address">
@@ -48,7 +27,7 @@ const Contact = () => {
                     <input type="text" placeholder="subject"/>
                 </article>
                 <textarea rows='6'></textarea>
-                <Button>send</Button>
+                <Button>Send <ImCircleRight className="icon" /></Button>
             </form>
             </div>
         </StyledContact>

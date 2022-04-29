@@ -35,6 +35,16 @@ const StyledContact = styled.section`
       margin-bottom: 1rem;
     }
 
+    Button {
+      background-color: #155bd5;
+      color: white;
+
+      :hover {
+        color: #155bd5;
+        background-color: white;
+      }
+    }
+
     .row {
       width: 100%;
       display: flex;

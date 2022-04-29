@@ -32,6 +32,15 @@ const StyledFooter = styled.footer`
         border-radius: 16px;
         border: none;
       }
+      Button {
+        color: white;
+        background-color: #155bd5;
+
+        :hover {
+          color: #155bd5;
+          background-color: white;
+        }
+      }
     }
 
     .social {
