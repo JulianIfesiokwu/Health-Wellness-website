@@ -15,7 +15,7 @@ const StyledList = styled.ul`
     text-decoration: none;
 
     &:hover {
-      color: #155bd5;
+      color: #133c85;
     }
   }
   a:nth-last-child(1) {
@@ -25,7 +25,7 @@ const StyledList = styled.ul`
     display: block;
     content: "";
     margin-top: 0.5rem;
-    border-bottom: solid 1px #155bd5;
+    border-bottom: solid 2px #133c85;
     transform: scaleX(0);
     transition: transform 500ms ease-in-out;
   }

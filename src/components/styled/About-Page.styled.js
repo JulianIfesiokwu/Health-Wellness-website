@@ -23,10 +23,11 @@ const StyledAboutPage = styled.div`
   }
 
   h1 {
-    width: 60%;
+    width: 50%;
     position: absolute;
     z-index: 3;
     top: 45%;
+    font-size: 3rem;
   }
 
   .history {
@@ -40,10 +41,14 @@ const StyledAboutPage = styled.div`
 
       h2 {
         margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #155bd5;
       }
 
       p {
         margin-bottom: 0.5rem;
+        line-height: 25px;
+        font-family: "Open Sans", "sans-serif";
       }
     }
 
@@ -60,12 +65,14 @@ const StyledAboutPage = styled.div`
   }
 
   .testimonials {
-    padding: 4rem;
+    padding: 2rem 4rem;
 
     h2 {
       text-align: center;
       text-transform: sentencecase;
-      margin-bottom: 2rem;
+      color: #155bd5;
+      font-size: 2rem;
+      font-family: "Open Sans", "sans-serif";
     }
 
     .carousel {
@@ -90,34 +97,61 @@ const StyledAboutPage = styled.div`
         position: relative;
         top: 9rem;
         cursor: pointer;
+        color: #155bd5;
       }
       .right-btn {
         position: relative;
         top: 9rem;
         left: 43rem;
         cursor: pointer;
+        color: #155bd5;
       }
+    }
 
-      .img-container {
-        width: 50%;
-        margin: 0 auto;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-        img {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 5px;
-          box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
-            0px 8px 16px rgba(96, 97, 112, 0.16);
+    .client-quote {
+      padding: 0 5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      .quote {
+        font-size: 1.5rem;
+        font-family: "Open Sans", "sans-serif";
+
+        .icon {
+          color: grey;
         }
       }
 
-      .client-quote {
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 1rem;
+      .client {
+        display: flex;
+        align-items: center;
+
+        .img-container {
+          width: 50px;
+          height: 50px;
+          margin: 1rem 1rem 1rem 0;
+          border-radius: 50%;
+          box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
+            0px 8px 16px rgba(96, 97, 112, 0.16);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        .name {
+          color: #155bd5;
+        }
+
+        .occupation {
+          color: grey;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          margin-top: 0.3rem;
+        }
       }
     }
   }
