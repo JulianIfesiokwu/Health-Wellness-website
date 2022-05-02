@@ -8,7 +8,7 @@ const AllServices = styled.div`
   justify-content: space-between;
 
   .service-card {
-    width: 30%;
+    width: 32%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     display: flex;
@@ -58,6 +58,12 @@ const AllServices = styled.div`
 
       .description {
         font-size: 0.9rem;
+      }
+
+      .price {
+        font-family: "Open Sans", "sans-serif";
+        font-weight: bold;
+        font-size: 1.3rem;
       }
 
       .schedule-btn {

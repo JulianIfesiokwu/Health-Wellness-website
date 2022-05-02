@@ -3,7 +3,9 @@ import Button from "../styled/Button.styled"
 import { Link } from "react-router-dom"
 
 const OneService = ({massage}) => {
-    const {name,id,img,duration,available,type,desc} = massage
+    const {name,id,img,duration,available,type,desc,price} = massage
+    const numberFormatter = Intl.NumberFormat('en-US');
+
     const [showText, setShowText] = useState(false)
     const expandText = () => {
     setShowText(!showText)
@@ -20,6 +22,7 @@ const OneService = ({massage}) => {
             <p>Locations available: {available}</p>
             <p className="massage-type">{type.toUpperCase()}</p>
             <p className="description">{showText ? desc : desc.slice(0, 200).concat('...  ') }  {<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
+            <p className="price">&#8358;{numberFormatter.format(price)}</p>
             <Link to='/sessions'><Button className="schedule-btn">Schedule</Button></Link>
         </div>
     </div>
