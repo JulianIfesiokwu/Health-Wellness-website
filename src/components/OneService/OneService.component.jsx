@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Button from "../styled/Button.styled"
+import { Link } from "react-router-dom"
 
 const OneService = ({massage}) => {
     const {name,id,img,duration,available,type,desc} = massage
@@ -18,8 +19,8 @@ const OneService = ({massage}) => {
             <p>Max-duration: {duration} hour(s)</p>
             <p>Locations available: {available}</p>
             <p className="massage-type">{type.toUpperCase()}</p>
-            <p>{showText ? desc : desc.slice(0, 200).concat('...  ') }  {<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
-            <Button>Schedule</Button>
+            <p className="description">{showText ? desc : desc.slice(0, 200).concat('...  ') }  {<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
+            <Link to='/sessions'><Button className="schedule-btn">Schedule</Button></Link>
         </div>
     </div>
     )

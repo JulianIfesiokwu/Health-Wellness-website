@@ -3,12 +3,16 @@ import styled from "styled-components";
 const AllServices = styled.div`
   padding: 4rem;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   .service-card {
-    padding: 0.5rem 1rem;
-    border: 1px solid #efefef;
+    width: 30%;
+    border: 1px solid #d3d3d3;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
@@ -20,25 +24,28 @@ const AllServices = styled.div`
     }
 
     .img-container {
-      width: 45%;
+      width: 100%;
       img {
-        display: block;
         width: 100%;
-        height: 250px;
+        height: auto;
         object-fit: contain;
+        border-radius: 5px 5px 0 0;
+        display: block;
       }
     }
 
     .details {
-      width: 60%;
       padding: 1rem;
       h4 {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
+        color: #155bd5;
+        font-family: "Open Sans", "sans-serif";
+        font-weight: 300;
       }
 
       p {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
         line-height: 25px;
 
         button {
@@ -49,6 +56,21 @@ const AllServices = styled.div`
         }
       }
 
+      .description {
+        font-size: 0.9rem;
+      }
+
+      .schedule-btn {
+        font-size: 1rem;
+        width: 100%;
+        background-color: #155bd5;
+        color: white;
+
+        &:hover {
+          color: #155bd5;
+          background-color: white;
+        }
+      }
       .massage-type {
         font-weight: bold;
       }
