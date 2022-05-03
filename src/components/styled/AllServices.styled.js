@@ -18,23 +18,27 @@ const AllServices = styled.div`
     .icon {
       vertical-align: middle;
     }
+    form {
+      #category {
+        padding: 0.5rem;
+      }
+    }
   }
 
   .listed-services {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1%;
 
     .service-card {
-      width: 32%;
+      width: 24%;
       border: 1px solid #d3d3d3;
       border-radius: 5px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
 
       &:hover {
         box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
@@ -49,14 +53,13 @@ const AllServices = styled.div`
           height: auto;
           object-fit: contain;
           border-radius: 5px 5px 0 0;
-          display: block;
         }
       }
 
       .details {
         padding: 1rem;
         h4 {
-          font-size: 1.5rem;
+          font-size: 1rem;
           margin-bottom: 0.8rem;
           color: #155bd5;
           font-family: "Open Sans", "sans-serif";
@@ -64,8 +67,8 @@ const AllServices = styled.div`
         }
 
         p {
-          margin-bottom: 0.3rem;
-          line-height: 25px;
+          margin-bottom: 0.2rem;
+          line-height: 22px;
 
           button {
             color: blue;
@@ -76,17 +79,19 @@ const AllServices = styled.div`
         }
 
         .description {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
+          margin-bottom: 0.5rem;
         }
 
         .price {
           font-family: "Open Sans", "sans-serif";
           font-weight: bold;
           font-size: 1.3rem;
+          margin-bottom: 1rem;
         }
 
         .schedule-btn {
-          font-size: 1rem;
+          font-size: 0.9rem;
           width: 100%;
           background-color: #155bd5;
           color: white;

@@ -14,7 +14,7 @@ const OneService = ({massage}) => {
     return (
         <div className="service-card" key={id}>
             <div className="img-container">
-                <img src={img} alt={name} />
+                <img src={img} alt={name} loading='lazy' />
             </div>
         <div className="details">
             <h4>{name}</h4>
