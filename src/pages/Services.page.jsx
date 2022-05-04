@@ -8,6 +8,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { useState } from "react"
 
 const allCategories = ['all', ...new Set(massageTypes.map((massage) => massage.type))]
+const allPrices = ['all', ...new Set(massageTypes.map((massage) => massage.price))]
 
 const ServicesPage = () => {
     
@@ -22,6 +23,14 @@ const ServicesPage = () => {
         const newServices = massageTypes.filter((service) => service.type === type)
         setServices(newServices)
     }
+    const filterPrice = (type) => {
+        if(type==='all') {
+            setServices(massageTypes)
+            return
+        }
+        const newPrices = massageTypes.filter((service) => service.price <= type)
+        setServices(newPrices)
+    }
 
     return (
         <>
@@ -35,21 +44,29 @@ const ServicesPage = () => {
             <div className="filter-controls">
                 <div className="price-control">
                     <h3>Search services by filters <AiOutlineSearch className="icon" size='30'/></h3>
-                    {/* <form>
-                        <label htmlFor='category'>Category: </label>
-                        <select name="category" id="category">
-                            {allCategories.map((category) => {
-                                return (
-                                <option className="category" key={category} onClick={() => filterServices(type)}>{category.toUpperCase()}</option>
-                                )
-                            })}
-                        </select>
-                    </form> */}
-                    {allCategories.map((category) => {
-                        return (
-                            <button onClick={() => filterServices(category)} key={category}>{category}</button>
-                        )
-                    })}
+                    <div className="search-options">
+                        <div className="search-category">
+                            <label htmlFor="categories">By Category:  </label>
+                            <select name="categories" id="categories" onChange={(e) => {
+                                filterServices(e.target.value)}}>
+                                {allCategories.map((category) => {
+                                    return (
+                                        <option key={category} value={category}>{category}</option>
+                                    )
+                                })}
+                            </select>
+                        </div>
+                        <div className="search-price">
+                            <label htmlFor="prices">Maximum Price:&#8358; </label>
+                            <select name="prices" id="prices" onChange={(e) => {
+                                filterPrice(e.target.value)}}>{allPrices.map((price) => {
+                                    return (
+                                        <option key={price} value={price}>{price}</option>
+                                    )
+                                })}
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
             </div>

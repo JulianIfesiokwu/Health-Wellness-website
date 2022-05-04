@@ -19,7 +19,7 @@ const OneService = ({massage}) => {
         <div className="details">
             <h4>{name}</h4>
             <p>Max-duration: {duration} hour(s)</p>
-            <p>Locations available: {available}</p>
+            <p>Locations available: <br /><b>{available.join(" & ").toUpperCase()}</b></p>
             <p className="massage-type">{type.toUpperCase()}</p>
             <p className="description">{showText ? desc : desc.slice(0, 200).concat('...  ') }  {<button onClick={() => expandText()}> {showText ? 'Show Less' : 'Read More...'}</button>}</p>
             <p className="price">&#8358;{numberFormatter.format(price)}</p>

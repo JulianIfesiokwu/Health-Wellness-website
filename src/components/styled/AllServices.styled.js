@@ -25,6 +25,28 @@ const AllServices = styled.div`
     }
   }
 
+  .search-options {
+    display: flex;
+    width: 100%;
+    button {
+      padding: 0.5rem 0.75rem;
+      border-radius: 25px;
+      border: none;
+      text-transform: uppercase;
+    }
+
+    .search-category,
+    .search-price {
+      margin: 1rem;
+      label {
+        margin-right: 1rem;
+      }
+      select {
+        padding: 0.4rem;
+      }
+    }
+  }
+
   .listed-services {
     width: 100%;
     display: flex;
