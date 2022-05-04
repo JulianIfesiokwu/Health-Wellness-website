@@ -9,15 +9,18 @@ import { useState } from "react"
 
 const allCategories = ['all', ...new Set(massageTypes.map((massage) => massage.type))]
 const allPrices = ['all', ...new Set(massageTypes.map((massage) => massage.price))]
+const allLocations = [].concat('all', ...new Set(...massageTypes.map((massage) => massage.available)))
 
 const ServicesPage = () => {
     
     const [categories, setCategories] = useState(allCategories)
     const [services, setServices] = useState(massageTypes)
+    // const [active, setActive] = useState(false)
     
     const filterServices = (type) => {
         if(type==='all') {
             setServices(massageTypes)
+            console.log(allLocations)
             return
         }
         const newServices = massageTypes.filter((service) => service.type === type)
@@ -30,6 +33,15 @@ const ServicesPage = () => {
         }
         const newPrices = massageTypes.filter((service) => service.price <= type)
         setServices(newPrices)
+    }
+    const filterLocation = (type) => {
+        if(type==='all') {
+            setServices(massageTypes)
+            return
+        }
+        const newLocation = massageTypes.filter((service) => service.available.includes(type))
+        setServices(newLocation)
+        console.log(type)
     }
 
     return (
@@ -65,6 +77,14 @@ const ServicesPage = () => {
                                     )
                                 })}
                             </select>
+                        </div>
+                        <div className="search-available">
+                            <label htmlFor="location">Location: </label>
+                            {allLocations.map((location) => {
+                                return (
+                                    <button key={location} onClick={() => filterLocation(location)}>{location}</button>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

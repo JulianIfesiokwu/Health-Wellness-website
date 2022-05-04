@@ -36,13 +36,18 @@ const AllServices = styled.div`
     }
 
     .search-category,
-    .search-price {
+    .search-price,
+    .search-available {
       margin: 1rem;
       label {
         margin-right: 1rem;
       }
       select {
         padding: 0.4rem;
+      }
+      button {
+        cursor: pointer;
+        margin-right: 1rem;
       }
     }
   }
