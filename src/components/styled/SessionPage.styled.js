@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyledSessionPage = styled.div`
   padding: 2rem 4rem;
-  background-color: teal;
 
   .form {
     margin-top: 3rem;
@@ -10,20 +9,66 @@ const StyledSessionPage = styled.div`
 
   .personal-details {
     display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", "sans-serif";
 
-    .input-container {
-      margin: 0.5rem 0;
-      width: 100%;
+    .form-title {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
 
-      label {
-        display: block;
+    .section-container {
+      display: flex;
+      border-top: 1px solid #222;
+      padding: 1rem 0;
+
+      .about {
+        width: 40%;
       }
 
-      input {
-        padding: 0.5rem;
+      .info {
+        width: 60%;
+
+        .two-column {
+          display: flex;
+          gap: 2%;
+
+          .input-container {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .input-container {
+      .checkbox-container {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="email"] {
+        padding: 0.75rem;
+        margin-top: 0.25rem;
         border: none;
         border-radius: 3px;
         outline: none;
+        width: 100%;
+      }
+
+      input[type="checkbox"] {
+        padding: 0.75rem 0 0 0.75rem;
+        margin-right: 0.5rem;
+        border: none;
+        vertical-align: middle;
+      }
+
+      option {
+        padding: 0.5rem;
       }
     }
   }
