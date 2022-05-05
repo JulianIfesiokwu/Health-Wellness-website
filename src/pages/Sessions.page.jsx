@@ -1,6 +1,7 @@
 import React from "react";
 import StyledSessionPage from "../components/styled/SessionPage.styled";
 import { massageTypes } from "../data";
+import Button from '../components/styled/Button.styled'
 
 const SessionsPage = () => {
     return (
@@ -30,10 +31,6 @@ const SessionsPage = () => {
                                     <input type="text" id="address" />
                                 </div>
                                 <div className="two-column">
-                                    <div className="input-container">
-                                        <label htmlFor='first-name'>Middle-name</label>
-                                        <input type="text" id="first-name" />                            
-                                    </div>
                                     <div className="input-container">
                                         <label htmlFor='age'>Age</label>
                                         <input type="number" id="age" />
@@ -74,8 +71,8 @@ const SessionsPage = () => {
                                     <p>Select Country of Appointment:</p>
                                     <select>
                                         <option value="Choose...">Choose...</option>
-                                        <option value="Nigeria">Nigeria</option>
-                                        <option value="USA">USA</option>
+                                        <option value="Nigeria">Lagos, Nigeria</option>
+                                        <option value="USA">New York, USA</option>
                                         <option value="London">London, UK</option>
                                     </select>
                                 </div>
@@ -162,7 +159,7 @@ const SessionsPage = () => {
                             </div>  
                         </div>                      
                     </div>
-                    <button>submit</button>
+                    <Button>submit</Button>
                 </form>
 
             </div>

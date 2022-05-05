@@ -3,6 +3,7 @@ import StyledAboutPage from "../components/styled/About-Page.styled"
 import { FaArrowAltCircleLeft,FaArrowAltCircleRight } from "react-icons/fa";
 import { testimonials } from "../data"
 import { ImQuotesLeft } from "react-icons/im";
+import AboutVideo from "../components/Video/AboutVideo.component";
 
 const AboutPage = () => {
     const [current,setCurrent] = useState(0)
@@ -18,9 +19,10 @@ const AboutPage = () => {
 
     return (
         <StyledAboutPage>
+            <AboutVideo />
             <div className="heading">
-                <h1>Professional massage therapists
-                    dedicated to ensuring healthier lifestyles for our clients.
+                <h1>Seasoned therapists
+                    ensuring healthier lifestyles for clients.
                 </h1>
             </div>
             <div className="history">

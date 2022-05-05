@@ -10,7 +10,7 @@ width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 6;
-    font-size: 42px;
+    font-size: 3.5rem;
   }
   p {
     color: white;
@@ -33,7 +33,7 @@ width: 100%;
         transform: translate(-50%, -50%);
     text-align: center;
     z-index: 7;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter spacing: 3px;
     line-height: 30px;
     text-align: start;

@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 const StyledSessionPage = styled.div`
   padding: 2rem 4rem;
+  background: rgb(21, 91, 213);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 91, 213, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
 
   .form {
     margin-top: 3rem;
@@ -41,6 +48,7 @@ const StyledSessionPage = styled.div`
     }
 
     .input-container {
+      margin-top: 1rem;
       .checkbox-container {
         margin-bottom: 1rem;
       }
@@ -56,7 +64,6 @@ const StyledSessionPage = styled.div`
         margin-top: 0.25rem;
         border: none;
         border-radius: 3px;
-        outline: none;
         width: 100%;
       }
 
@@ -67,9 +74,23 @@ const StyledSessionPage = styled.div`
         vertical-align: middle;
       }
 
-      option {
+      select,
+      input[type="date"] {
+        margin-top: 0.5rem;
         padding: 0.5rem;
+        width: 50%;
       }
+    }
+  }
+
+  Button {
+    color: white;
+    background-color: #155bd5;
+    cursor: pointer;
+
+    &::hover {
+      color: #155bd5;
+      background-color: white;
     }
   }
 `;

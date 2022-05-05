@@ -2,13 +2,8 @@ import styled from "styled-components";
 
 const StyledAboutPage = styled.div`
   .heading {
-    padding: 4rem;
+    padding: 0 4rem;
     color: white;
-    background-image: url("https://yachting-pages.com/custom/domain_1/image_files/ckeditor/sitemgr_00-massage-therapist-massaging-client.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
 
     &::after {
       content: "";
@@ -17,7 +12,7 @@ const StyledAboutPage = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.7;
+      opacity: 0.9;
       background-color: rgba(0, 0, 0, 0.5);
     }
   }
@@ -27,7 +22,7 @@ const StyledAboutPage = styled.div`
     position: absolute;
     z-index: 3;
     top: 45%;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .history {

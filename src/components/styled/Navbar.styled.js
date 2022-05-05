@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.header`
-  padding: 1rem 4rem 0 4rem;
+  padding: 0.5rem 4rem 0 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;

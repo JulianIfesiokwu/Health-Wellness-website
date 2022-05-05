@@ -6,7 +6,7 @@ const StyledHero = styled.div`
     width: 60%;
     color: white;
     position: absolute;
-    left: 4rem;
+    left: 3.5rem;
     top: 35%;
     z-index: 6;
     font-size: 4rem;

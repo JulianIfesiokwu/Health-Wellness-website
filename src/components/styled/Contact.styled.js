@@ -53,7 +53,7 @@ const StyledContact = styled.section`
       input {
         width: 45%;
         border: 1px solid #efefef;
-        border-radius: 8px;
+        border-radius: 5px;
         font-size: 0.9rem;
         padding: 0.5rem;
         margin-bottom: 1rem;
@@ -66,7 +66,7 @@ const StyledContact = styled.section`
     textarea {
       width: 100%;
       border: 1px solid #efefef;
-      border-radius: 8px;
+      border-radius: 5px;
       font-size: 0.9rem;
       padding: 0.5rem;
       margin-bottom: 1rem;

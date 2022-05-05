@@ -8,7 +8,6 @@ import swedishThumbnail from '../../assets/images/swedish-thumbnail.jpg'
 import { ImCircleRight } from "react-icons/im";
 import { Link } from 'react-router-dom'
 
-
 const Services = () => {
     return (
         <StyledServices>

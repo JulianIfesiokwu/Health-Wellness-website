@@ -1,8 +1,8 @@
 import { StyledVideoContainer } from "../styled/Video.styled";
-import Video from '../../assets/videos/back-massage.webm'
+import Video from '../../assets/videos/theraphy-session.webm'
 import { useRef } from "react";
 
-const ServicesVideo = () => {
+const AboutVideo = () => {
     const videoRef = useRef()
     const setPlayBack = () => {
         videoRef.current.playbackRate = 0.5
@@ -19,4 +19,4 @@ const ServicesVideo = () => {
     )
 }
 
-export default ServicesVideo
+export default AboutVideo
