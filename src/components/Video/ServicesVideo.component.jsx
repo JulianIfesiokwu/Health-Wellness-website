@@ -1,5 +1,5 @@
 import { StyledVideoContainer } from "../styled/Video.styled";
-import Video from '../../assets/videos/back-massage.mp4'
+import Video from '../../assets/videos/back-massage.webm'
 import { useRef } from "react";
 
 const ServicesVideo = () => {

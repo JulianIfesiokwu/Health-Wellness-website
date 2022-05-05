@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledVideoContainer } from "../styled/Video.styled";
-import Video from '../../assets/videos/background-video.mp4'
+import Video from '../../assets/videos/background-video.webm'
 import { useRef } from "react";
 
 const BackgroundVideo = () => {
