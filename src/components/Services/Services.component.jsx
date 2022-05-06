@@ -17,28 +17,38 @@ const Services = () => {
             </div>
             <div className='offerings'>
                 <StyledCard>
-                    <h3>Aromatheraphy</h3>
                     <img src={aromatheraphyThumbnail} alt='aromatheraphy' />
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                    <Link to='/services'>
+                    <div className="details">
+                        <h3>Aromatheraphy</h3>
+                        <Link to='/services'>
                         <Button>Schedule <ImCircleRight className="icon" /></Button>
-                    </Link>
+                        </Link>
+                    </div>
                 </StyledCard>
                 <StyledCard>
-                    <h3>Hot Stone Massage</h3>
                     <img src={hotstoneThumbnail} alt='Hot stone Massage' />
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                    <Link to='/services'>
-                        <Button>Schedule <ImCircleRight className="icon" /></Button>
-                    </Link>
+                    <div className="details">
+                        <h3>Hot Stone Massage</h3>
+                        <Link to='/services'>
+                            <Button>Schedule <ImCircleRight className="icon" /></Button>
+                        </Link>
+                    </div>
                 </StyledCard>
                 <StyledCard>
-                    <h3>Swedish Massage</h3>
                     <img src={swedishThumbnail} alt='Swedish Massage' />
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    <div className="details">
+                    <h3>Swedish Massage</h3>
                     <Link to='/services'>
                         <Button>Schedule <ImCircleRight className="icon" /></Button>
                     </Link>
+                    </div>
+                </StyledCard>
+                <StyledCard>
+                    <div className="details">
+                    <Link to='/services'>
+                        <Button>View all Services <ImCircleRight className="icon" /></Button>
+                    </Link>
+                    </div>
                 </StyledCard>
 
             </div>

@@ -7,10 +7,12 @@ import ErrorPage from "./pages/Error.Page";
 import ServicesPage from "./pages/Services.page";
 import ContactPage from "./pages/Contact.page";
 import SessionsPage from "./pages/Sessions.page";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.component";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index path="/" element={<HomePage />}></Route>

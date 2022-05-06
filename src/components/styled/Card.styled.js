@@ -1,25 +1,27 @@
 import styled from "styled-components";
 
 const StyledCard = styled.div`
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #efefef;
-  padding: 1.5rem;
   text-align: start;
-
-  h3,
-  img,
-  p {
-    margin-bottom: 1rem;
-  }
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h3 {
     font-family: "Open sans", "sans-serif";
     font-weight: 300;
     color: #155bd5;
+    margin-bottom: 1rem;
+  }
+  .details {
+    padding: 1rem;
   }
 
   img {
-    border-radius: 8px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1rem;
     width: 100%;
   }
 
@@ -30,6 +32,7 @@ const StyledCard = styled.div`
   Button {
     background-color: #155bd5;
     color: white;
+    width: 100%;
   }
 
   &:hover {
@@ -42,8 +45,11 @@ const StyledCard = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
+    width: 100%;
+    text-align: center;
     margin-bottom: 1rem;
+
     img {
       height: 200px;
     }

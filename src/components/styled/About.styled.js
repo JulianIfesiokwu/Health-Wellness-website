@@ -117,9 +117,13 @@ const StyledAbout = styled.section`
         display: flex;
         flex-direction: column;
         .controls {
-          padding: 0;
+          width: 100%;
+          padding: 1rem;
+          margin-bottom: 1rem;
           Button {
             margin-right: 0;
+            margin-bottom: 0;
+            margin-top: 0.5rem;
           }
         }
       }

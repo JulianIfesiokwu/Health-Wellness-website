@@ -83,7 +83,7 @@ const SessionsPage = () => {
                                     {massageTypes.map((massage) => {
                                         const {name} = massage
                                         return (
-                                            <option value={name}>{name}</option>
+                                            <option value={name} key={name}>{name}</option>
                                         )
                                     })}
                                     </select>
@@ -114,9 +114,9 @@ const SessionsPage = () => {
                                     <p>Payment Method</p>
                                     <div className="checkbox-container">
                                         <input type="radio" id="cash" name="payment" value="cash" />
-                                        <label for="cash">Cash</label>
+                                        <label htmlFor="cash">Cash</label>
                                         <input type="radio" id="card" name="payment" value="card" />
-                                        <label for="card">Card</label>
+                                        <label htmlFor="card">Card</label>
                                     </div>
                                     <div className="two-column">
                                         <div className="input-container">

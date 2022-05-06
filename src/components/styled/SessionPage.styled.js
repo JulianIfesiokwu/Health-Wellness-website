@@ -26,7 +26,7 @@ const StyledSessionPage = styled.div`
 
     .section-container {
       display: flex;
-      border-top: 1px solid #222;
+      border-top: 1px solid white;
       padding: 1rem 0;
 
       .about {

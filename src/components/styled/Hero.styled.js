@@ -83,11 +83,14 @@ const StyledHero = styled.div`
     h1 {
       color: white;
       position: absolute;
+      text-align: center;
       top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 6;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      line-height: 35px;
+      width: 70%;
     }
 
     p {

@@ -49,7 +49,20 @@ const StyledServices = styled.section`
   }
 
   @media (max-width: 426px) {
-    padding: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+
+    .title {
+      p {
+        width: 90%;
+      }
+    }
+
+    .offerings {
+      display: flex;
+      justify-content: space-between;
+      gap: 3%;
+    }
   }
 `;
 
