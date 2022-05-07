@@ -57,7 +57,8 @@ const StyledFooter = styled.footer`
       }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 600px) {
+    padding: 2rem;
     flex-direction: column;
     text-align: center;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.header`
-  padding: 0.5rem 4rem 0 4rem;
+  padding: 1rem 4rem 0 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -18,19 +18,31 @@ const StyledNavbar = styled.header`
     width: auto;
   }
 
-  @media (max-width: 812px) {
+  @media (max-width: 992px) {
+    padding: 1rem 2rem 0 2rem;
+
+    //for the navbar at small screen sizes
+    .show-container {
+      display: block;
+    }
+
+    .heading {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .menu {
-      display: inline;
-      position: relative;
-      cursor: pointer;
+      display: none;
 
       li {
-        margin-right: 0;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding-bottom: 0.2rem;
       }
     }
   }
-  @media (max-width: 426px) {
+
+  @media (max-width: 768px) {
     padding: 1rem 2rem 0 2rem;
 
     //for the navbar at small screen sizes
@@ -45,6 +57,30 @@ const StyledNavbar = styled.header`
     }
 
     .menu {
+      display: block;
+      li {
+        font-size: 1rem;
+        padding-bottom: 0.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 1rem 2rem 0 2rem;
+
+    //for the navbar at small screen sizes
+    .show-container {
+      display: block;
+    }
+
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu {
+      display: block;
       li {
         font-size: 1rem;
         padding-bottom: 0.2rem;

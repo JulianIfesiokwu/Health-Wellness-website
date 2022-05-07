@@ -34,7 +34,23 @@ const StyledList = styled.ul`
     transform-origin: 0% 50%;
   }
 
-  @media (max-width: 812px) {
+  @media (max-width: 992px) {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0.25rem;
+
+    a {
+      margin-right: 1.5rem;
+      font-size: 1rem;
+      color: white;
+      font-weight: 400;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
     width: 85%;
     display: none;
     padding: 0.75rem 1rem;
@@ -54,9 +70,9 @@ const StyledList = styled.ul`
     }
   }
 
-  @media (max-width: 426px) {
+  @media only screen and (max-width: 600px) {
     display: none;
-    width: 85%;
+    width: 87%;
     padding: 0.75rem 1rem;
     border-radius: 5px;
     flex-direction: column;
