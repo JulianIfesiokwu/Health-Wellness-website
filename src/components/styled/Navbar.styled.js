@@ -14,7 +14,8 @@ const StyledNavbar = styled.header`
     display: none;
   }
 
-  .links-container {
+  .heading {
+    width: auto;
   }
 
   @media (max-width: 812px) {
@@ -31,6 +32,18 @@ const StyledNavbar = styled.header`
   }
   @media (max-width: 426px) {
     padding: 1rem 2rem 0 2rem;
+
+    //for the navbar at small screen sizes
+    .show-container {
+      display: block;
+    }
+
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .menu {
       li {
         font-size: 1rem;

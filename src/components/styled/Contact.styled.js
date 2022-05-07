@@ -3,14 +3,9 @@ import styled from "styled-components";
 const StyledContact = styled.section`
   padding: 2rem 4rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-between;
+  align-items: center;
 
-  .address-details {
-    display: flex;
-    align-items: center;
-  }
   .address {
     display: flex;
     flex-direction: column;
@@ -77,25 +72,29 @@ const StyledContact = styled.section`
     }
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     padding: 2rem;
 
     .address {
-      text-align: center;
+      text-align: start;
       width: 100%;
 
       p {
         width: 100%;
+        .icon {
+          display: inline-block;
+        }
         margin-bottom: 1rem;
       }
     }
 
     .form {
       width: 100%;
-      text-align: center;
 
       .row {
+        flex-direction: column;
+
         input {
           width: 100%;
           display: block;

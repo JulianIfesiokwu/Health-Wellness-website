@@ -8,7 +8,6 @@ const Contact = () => {
     return (
         <>
         <StyledContact>
-            <div className="address-details">
             <div className="address">
                 <p><AiFillPhone size='30' className="icon"/> 0984537278623</p>
                 <p><MdEmail size='25' className="icon"/> ourCompanyEmail@gmail.com</p>
@@ -29,7 +28,6 @@ const Contact = () => {
                 <textarea rows='6'></textarea>
                 <Button>Send <ImCircleRight className="icon" /></Button>
             </form>
-            </div>
         </StyledContact>
         </>
     )

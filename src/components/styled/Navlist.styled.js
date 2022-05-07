@@ -35,13 +35,42 @@ const StyledList = styled.ul`
   }
 
   @media (max-width: 812px) {
+    width: 85%;
     display: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    display: static;
     flex-direction: column;
     position: absolute;
-    right: 0.5rem;
-    top: 4.5rem;
+    right: 2rem;
+    top: 3.25rem;
     text-align: end;
     margin-top: 0;
+    background-color: #155bd5;
+
+    a {
+      padding-bottom: 0.25rem;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 426px) {
+    display: none;
+    width: 85%;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    flex-direction: column;
+    position: absolute;
+    right: 2rem;
+    top: 3.25rem;
+    text-align: end;
+    margin-top: 0;
+    background-color: #155bd5;
+
+    a {
+      padding-bottom: 0.25rem;
+      margin-right: 0;
+    }
   }
 `;
 

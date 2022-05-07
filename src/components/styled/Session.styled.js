@@ -7,13 +7,14 @@ const StyledSession = styled.section`
   background-size: cover;
   padding: 4rem 4rem;
   color: white;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
 
   .title {
-    width: 50%;
+    width: 70%;
     margin: 2rem auto;
     font-size: 2rem;
   }
+
   .more {
     width: 60%;
     margin: 2rem auto;
@@ -30,6 +31,7 @@ const StyledSession = styled.section`
       color: #155bd5;
       background-color: white;
     }
+  }
 
   @media (max-width: 768px) {
     .title {
@@ -44,9 +46,10 @@ const StyledSession = styled.section`
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
+    padding: 2rem;
     .title {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
   }
 `;
