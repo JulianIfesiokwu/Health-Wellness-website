@@ -16,7 +16,7 @@ const Services = () => {
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
             </div>
             <div className='offerings'>
-                <StyledCard>
+                <StyledCard className='card'>
                     <img src={aromatheraphyThumbnail} alt='aromatheraphy' />
                     <div className="details">
                         <h3>Aromatheraphy</h3>
@@ -25,7 +25,7 @@ const Services = () => {
                         </Link>
                     </div>
                 </StyledCard>
-                <StyledCard>
+                <StyledCard className='card'>
                     <img src={hotstoneThumbnail} alt='Hot stone Massage' />
                     <div className="details">
                         <h3>Hot Stone Massage</h3>
@@ -34,7 +34,7 @@ const Services = () => {
                         </Link>
                     </div>
                 </StyledCard>
-                <StyledCard>
+                <StyledCard className='card'>
                     <img src={swedishThumbnail} alt='Swedish Massage' />
                     <div className="details">
                     <h3>Swedish Massage</h3>
@@ -43,7 +43,7 @@ const Services = () => {
                     </Link>
                     </div>
                 </StyledCard>
-                <StyledCard>
+                <StyledCard className='card'>
                     <div className="details">
                     <Link to='/services'>
                         <Button>View all Services <ImCircleRight className="icon" /></Button>

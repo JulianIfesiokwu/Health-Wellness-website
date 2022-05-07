@@ -48,7 +48,7 @@ const StyledServices = styled.section`
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 600px) {
     padding: 0 2rem;
     margin-bottom: 2rem;
 
@@ -60,8 +60,14 @@ const StyledServices = styled.section`
 
     .offerings {
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
       gap: 3%;
+
+      .card {
+        width: 48%;
+      }
     }
   }
 `;

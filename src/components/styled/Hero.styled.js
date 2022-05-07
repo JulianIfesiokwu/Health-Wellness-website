@@ -6,33 +6,37 @@ const StyledHero = styled.div`
     width: 60%;
     color: white;
     position: absolute;
-    left: 3.5rem;
-    top: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 6;
     font-size: 4rem;
     font-weight: 900;
     line-height: 65px;
+    text-align: center;
   }
   p {
     color: white;
     position: absolute;
-    left: 4rem;
+    left: 50%;
     width: 40%;
-    top: 60%;
-    z-index: 7;
-    font-size: 1.5rem;
+    top: 70%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 35px;
-    text-align: start;
   }
   Button {
     color: white;
     background-color: #155bd5;
     position: absolute;
-    left: 4rem;
-    top: 75%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
     z-index: 7;
-    letter spacing: 3px;
     text-align: start;
 
     .icon {
@@ -57,63 +61,74 @@ const StyledHero = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-    width: 60%;
+      margin: 0 auto;
       font-size: 3rem;
       line-height: 45px;
-    }
-
-    p {
-    z-index: 7;
-    font-size: 1.2rem;
-    line-height: 25px;
-    width: 50%;
-    }
-    Button {
-    position: absolute;
-    left: 0;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 6;
-    font-size: 0.7rem;
-    letter spacing: 3px;
-  }
-  }
-
-  @media (max-width: 426px) {
-    h1 {
-      color: white;
+      text-align: center;
       position: absolute;
       text-align: center;
-      top: 55%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 6;
-      font-size: 2rem;
-      line-height: 35px;
+      line-height: 45px;
       width: 70%;
     }
 
     p {
-    color: white;
+      z-index: 7;
+      font-size: 1.2rem;
+      line-height: 25px;
+      width: 50%;
+      position: absolute;
+      width: 70%;
+      top: 68%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    Button {
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+      z-index: 6;
+      font-size: 0.7rem;
+      letter spacing: 3px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 6;
+      font-size: 2.5rem;
+      line-height: 40px;
+      width: 70%;
+    }
+
+    p {
     position: absolute;
     width: 70%;
-    top: 70%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    font-size: 0.7rem;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 25px;
     text-align: center;
   }
     Button {
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 80%;
     transform: translate(-50%, -50%);
     z-index: 6;
     font-size: 0.7rem;
-    letter spacing: 3px;
-    line-height: 30px;
   }
 `;
 

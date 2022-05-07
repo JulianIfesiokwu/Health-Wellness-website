@@ -109,7 +109,7 @@ const StyledAbout = styled.section`
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 600px) {
     padding: 2rem;
 
     .about-info {
