@@ -72,12 +72,12 @@ const StyledList = styled.ul`
 
   @media only screen and (max-width: 600px) {
     display: none;
-    width: 88%;
+    width: 85%;
     padding: 0.75rem 1rem;
     border-radius: 5px;
     flex-direction: column;
     position: absolute;
-    right: 2.5rem;
+    right: 2.25rem;
     top: 3.25rem;
     text-align: end;
     margin-top: 0;

@@ -28,8 +28,8 @@ const AboutPage = () => {
             <div className="history">
                 <div className="details">
                     <h2>Our History</h2>
-                    <p>We have been in this game for 10years selling rap tunes, just kidding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo in nam fugit facilis amet, natus laboriosam voluptatum molestias sapiente iste aliquam reprehenderit vero, autem et? Sunt, sit. Minus, itaque.</p>
-                    <p>Now with offices in 4 countries, we hope to connect our clients with exceptional services at an affordable price. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, sed tempora nulla necessitatibus quae porro dolorum similique dolor tenetur architecto officiis aliquam natus saepe? Dignissimos earum aliquam vero esse maiores!</p>
+                    <p>We have been in this game for 10years selling rap tunes, just kidding. Eveniet illo in nam fugit facilis amet, natus laboriosam voluptatum molestias sapiente iste aliquam reprehenderit vero, autem et? Sunt, sit. Minus, itaque.</p>
+                    <p>Now with offices in 4 countries, we hope to connect our clients with exceptional services at an affordable price. Dolorem, sed tempora nulla necessitatibus quae porro dolorum similique dolor tenetur architecto officiis aliquam natus saepe? Dignissimos earum aliquam vero esse maiores!</p>
                 </div>
                 <div className="img-container">
                     <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="passion" />
@@ -40,7 +40,6 @@ const AboutPage = () => {
                 <h2>Client testimonies</h2>
             <div className="carousel">
                 <FaArrowAltCircleLeft onClick={prevSlide} className="left-btn" size='40'/>
-                {/* <FaArrowAltCircleRight onClick={nextSlide} className="right-btn" size='40'/> */}
                 {
                     testimonials.map((testimony, index) => {
                         const {id,name,img,quote,occupation} = testimony
@@ -66,6 +65,7 @@ const AboutPage = () => {
                         )
                     })
                 }
+                <FaArrowAltCircleRight onClick={nextSlide} className="right-btn" size='40'/>
             </div>
 
             </div>
