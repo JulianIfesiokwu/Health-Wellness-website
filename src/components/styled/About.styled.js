@@ -67,9 +67,13 @@ const StyledAbout = styled.section`
     }
   }
 
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    padding-bottom: 0;
+    padding: 2rem 2rem 0 2rem;
 
     .img-container {
       width: 100%;
@@ -88,17 +92,22 @@ const StyledAbout = styled.section`
     .short {
       display: flex;
       align-items: center;
+      gap: 2%;
       margin: 2rem auto;
 
       .controls {
         display: flex;
         flex-direction: column;
         flex: 1;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
         // remove bottom margin
         margin-bottom: 0;
         Button {
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
+          // remove margin used for other viewpoints
+          margin-right: 0;
+          width: 100%;
         }
       }
       .summarised {

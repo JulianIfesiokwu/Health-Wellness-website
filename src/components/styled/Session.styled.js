@@ -33,7 +33,12 @@ const StyledSession = styled.section`
     }
   }
 
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
+
   @media (max-width: 768px) {
+    padding: 2rem;
     .title {
       width: 85%;
       margin: 2rem auto;

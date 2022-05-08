@@ -50,7 +50,12 @@ const StyledFooter = styled.footer`
     }
   }
 
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
+  
   @media (max-width: 768px) {
+    padding: 2rem;
     .column {
       p {
         margin-bottom: 0.5rem;

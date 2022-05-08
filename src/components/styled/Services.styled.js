@@ -32,7 +32,11 @@ const StyledServices = styled.section`
     gap: 3%;
   }
 
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
   @media (max-width: 768px) {
+    padding: 2rem;
     .title {
       h2 {
         margin-bottom: 1rem;
@@ -44,7 +48,11 @@ const StyledServices = styled.section`
     }
 
     .offerings {
-      flex-direction: column;
+      flex-wrap: wrap;
+
+      .card {
+        width: 48%;
+      }
     }
   }
 
@@ -66,7 +74,7 @@ const StyledServices = styled.section`
       gap: 3%;
 
       .card {
-        width: 48%;
+        width: 100%;
       }
     }
   }

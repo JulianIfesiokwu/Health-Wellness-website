@@ -72,6 +72,13 @@ const StyledContact = styled.section`
     }
   }
 
+  @media only screen and (max-width: 992px) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 2rem;
+  }
+
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     padding: 2rem;

@@ -46,7 +46,7 @@ const Services = () => {
                 <StyledCard className='card'>
                     <div className="details">
                     <Link to='/services'>
-                        <Button>View all Services <ImCircleRight className="icon" /></Button>
+                        <Button>All Services <ImCircleRight className="icon" /></Button>
                     </Link>
                     </div>
                 </StyledCard>

@@ -40,7 +40,7 @@ const AboutPage = () => {
                 <h2>Client testimonies</h2>
             <div className="carousel">
                 <FaArrowAltCircleLeft onClick={prevSlide} className="left-btn" size='40'/>
-                <FaArrowAltCircleRight onClick={nextSlide} className="right-btn" size='40'/>
+                {/* <FaArrowAltCircleRight onClick={nextSlide} className="right-btn" size='40'/> */}
                 {
                     testimonials.map((testimony, index) => {
                         const {id,name,img,quote,occupation} = testimony

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const StyledVideoContainer = styled.div`
   width: 100%;
   video {
-    width: 100%;
+    display: block;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
   }
