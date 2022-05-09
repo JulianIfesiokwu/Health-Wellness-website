@@ -54,7 +54,6 @@ const ServicesPage = () => {
         </ServicesPageStyled>
         <AllServices>
             <div className="filter-controls">
-                <div className="price-control">
                     <h3>Search services by filters <AiOutlineSearch className="icon" size='30'/></h3>
                     <div className="search-options">
                         <div className="search-category">
@@ -87,7 +86,6 @@ const ServicesPage = () => {
                             })}
                         </div>
                     </div>
-                </div>
 
             </div>
             <div className="listed-services">

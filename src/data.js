@@ -58,7 +58,7 @@ export const massageTypes = [
     available: ["spa"],
     type: "full body",
     price: "50000",
-    desc: "Deep tissue massage uses more pressure than a Swedish massage. It’s a good option if you have muscle problems, such as soreness,injury,imbalance,tightness, and chronic muscle pain. During a deep tissue massage, your massage therapist will use slow strokes and deep finger pressure to relieve tension from the deepest layers of your muscles and connective tissues. You can be naked during this massage or wear your underwear. The massage lasts 60 to 90 minutes. While deep tissue may be more intense, you shouldn’t feel any pain or soreness.",
+    desc: "Deep tissue massage uses more pressure than a Swedish massage. It’s a good option if you have muscle problems, such as soreness, injury, imbalance, tightness, and chronic muscle pain. During a deep tissue massage, your massage therapist will use slow strokes and deep finger pressure to relieve tension from the deepest layers of your muscles and connective tissues. You can be naked during this massage or wear your underwear. The massage lasts 60 to 90 minutes. While deep tissue may be more intense, you shouldn’t feel any pain or soreness.",
   },
   {
     id: 5,

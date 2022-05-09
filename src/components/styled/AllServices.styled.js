@@ -5,7 +5,7 @@ const AllServices = styled.div`
 
   .filter-controls {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin-bottom: 2rem;
 
     h3 {
@@ -27,6 +27,9 @@ const AllServices = styled.div`
 
   .search-options {
     display: flex;
+    align-items; center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     button {
       padding: 0.5rem 0.75rem;
@@ -38,12 +41,14 @@ const AllServices = styled.div`
     .search-category,
     .search-price,
     .search-available {
-      margin: 1rem;
+      margin: 0.5rem;
       label {
         margin-right: 1rem;
+        margin-bottom: 0.5rem;
       }
       select {
         padding: 0.4rem;
+        width: 100%;
       }
       button {
         cursor: pointer;
@@ -133,13 +138,50 @@ const AllServices = styled.div`
         }
       }
     }
+  }
 
-    @media (max-width: 768px) {
-      padding: 2rem;
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: 2rem;
+    .listed-services {
+      justify-content: space-between;
+      .service-card {
+        width: 32%;
+        flex-direction: column;
+        padding: 0;
 
+        .img-container {
+          width: 100%;
+
+          img {
+            display: block;
+          }
+        }
+
+        .details {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 2rem;
+
+    .filter-controls {
+      label {
+        display: block;
+      }
+    }
+
+    .listed-services {
+      justify-content: space-between;
       .service-card {
         flex-direction: column;
         padding: 0;
+        width: 47%;
 
         .img-container {
           width: 100%;

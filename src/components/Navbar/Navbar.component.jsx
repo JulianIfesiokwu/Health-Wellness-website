@@ -43,11 +43,11 @@ const Navbar = () => {
                 </div>
             </div>
             <StyledList className={showAside ? "show-container" : ""}>
-                <NavLink to='/' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Home</NavLink>
-                <NavLink to='/about' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>About Us</NavLink>
-                <NavLink to='/services' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Services</NavLink>
-                <NavLink to='/sessions' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Book a session</NavLink>
-                <NavLink to='/contact' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}}>Contact Us</NavLink>
+                <NavLink to='/' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}} onClick={() => toggleLinks()}>Home</NavLink>
+                <NavLink to='/about' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}} onClick={() => toggleLinks()}>About Us</NavLink>
+                <NavLink to='/services' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}} onClick={() => toggleLinks()}>Services</NavLink>
+                <NavLink to='/sessions' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}} onClick={() => toggleLinks()}>Book a session</NavLink>
+                <NavLink to='/contact' style={({ isActive }) => { return { color: isActive ? "#133c85" : "white" };}} onClick={() => toggleLinks()}>Contact Us</NavLink>
             </StyledList>         
         </StyledNavbar>
     )

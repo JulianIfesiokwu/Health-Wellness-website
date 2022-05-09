@@ -54,9 +54,10 @@ width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
+      width: 70%;
     }
 
     p {
@@ -64,16 +65,16 @@ width: 100%;
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 600px) {
     h1 {
       color: white;
       position: absolute;
       top: 55%;
       left: 50%;
-      width: 90%;
+      width: 70%;
       transform: translate(-50%, -50%);
       z-index: 6;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       text-align: center;
     }
 
@@ -85,8 +86,8 @@ width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    font-size: 0.7rem;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 25px;
     text-align: center;
   }
     Button {
