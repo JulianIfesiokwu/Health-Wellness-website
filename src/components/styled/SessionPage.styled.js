@@ -11,7 +11,7 @@ const StyledSessionPage = styled.div`
   color: white;
 
   .form {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .personal-details {
@@ -76,9 +76,9 @@ const StyledSessionPage = styled.div`
 
       select,
       input[type="date"] {
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-        width: 50%;
+        margin-top: 0.18rem;
+        padding: 0.65rem;
+        width: 100%;
       }
     }
   }
@@ -91,6 +91,32 @@ const StyledSessionPage = styled.div`
     &::hover {
       color: #155bd5;
       background-color: white;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 2rem;
+  }
+  @media (max-width: 600px) {
+    padding: 2rem;
+
+    .personal-details {
+      .section-container {
+        flex-direction: column;
+
+        .info,
+        .about {
+          width: 100%;
+        }
+
+        select,
+        input[type="date"] {
+          width: 100%;
+        }
+        input[type="date"] {
+          margin-top: 0.25rem;
+        }
+      }
     }
   }
 `;
