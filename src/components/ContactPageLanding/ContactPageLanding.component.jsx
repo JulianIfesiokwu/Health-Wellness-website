@@ -13,7 +13,7 @@ const ContactPageLanding = () => {
                     <p className="telephone">(+1 570) 253-2853</p>
                 </div>
                 <div className="country">
-                    <p className="city">London, United Kingdom</p>
+                    <p className="city">London, UK</p>
                     <p className="address">28 Kings Road
                         London, WC13 8MX</p>
                     <p className="telephone">(+44) 020 7946 0752</p>
