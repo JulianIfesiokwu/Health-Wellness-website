@@ -51,7 +51,7 @@ const StyledSession = styled.section`
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 600px) {
     padding: 2rem;
     .title {
       font-size: 1.1rem;

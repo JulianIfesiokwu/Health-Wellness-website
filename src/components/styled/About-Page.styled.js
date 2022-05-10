@@ -18,13 +18,13 @@ const StyledAboutPage = styled.div`
   }
 
   h1 {
-    width: 70%;
+    width: 60%;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     line-height: 65px;
     text-align: center;
@@ -172,6 +172,7 @@ const StyledAboutPage = styled.div`
 
   @media (max-width: 768px) {
     h1 {
+      font-size: 3rem;
       width: 70%;
       text-align: center;
       top: 60%;
@@ -201,11 +202,12 @@ const StyledAboutPage = styled.div`
   @media (max-width: 600px) {
     h1 {
       font-size: 2.5rem;
-      width: 70%;
+      width: 80%;
       text-align: center;
-      top: 60%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      line-height: 40px;
     }
 
     .history {

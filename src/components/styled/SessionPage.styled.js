@@ -97,6 +97,7 @@ const StyledSessionPage = styled.div`
   @media (max-width: 992px) {
     padding: 2rem;
   }
+
   @media (max-width: 600px) {
     padding: 2rem;
 
@@ -115,6 +116,14 @@ const StyledSessionPage = styled.div`
         }
         input[type="date"] {
           margin-top: 0.25rem;
+        }
+
+        .two-column {
+          .input-container {
+            #card-number {
+              width: ;
+            }
+          }
         }
       }
     }
