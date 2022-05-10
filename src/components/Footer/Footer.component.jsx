@@ -6,12 +6,15 @@ import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { ImCircleRight } from "react-icons/im";
 
 const Footer = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
         defaultValues: {
             email: ''
         }
     })
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = (data) => { 
+        console.log(data)
+        reset()
+    }
 
     return (
         <StyledFooter>

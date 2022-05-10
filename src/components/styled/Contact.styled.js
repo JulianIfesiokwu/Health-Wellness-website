@@ -30,9 +30,17 @@ const StyledContact = styled.section`
       margin-bottom: 1rem;
     }
 
+    .error-message {
+      display: block;
+      width: 100%;
+      color: red;
+      font-size: 0.8rem;
+    }
+
     Button {
       background-color: #155bd5;
       color: white;
+      margin-top: 1rem;
 
       :hover {
         color: #155bd5;
@@ -45,17 +53,31 @@ const StyledContact = styled.section`
       display: flex;
       align-items: space-between;
       justify-content: space-between;
-      input {
-        width: 45%;
-        border: 1px solid #efefef;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        :focus {
-          box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
-            0px 8px 16px rgba(96, 97, 112, 0.16);
+
+      .col-1,
+      .col-2,
+      .col-3 {
+        margin-bottom: 0.5rem;
+        width: 49%;
+        input {
+          width: 100%;
+          border: 1px solid #efefef;
+          border-radius: 5px;
+          font-size: 0.9rem;
+          padding: 0.5rem;
+          margin-bottom: 0.2rem;
+          :focus {
+            box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
+              0px 8px 16px rgba(96, 97, 112, 0.16);
+          }
         }
+      }
+
+      .error-message {
+        display: block;
+        width: 100%;
+        color: red;
+        font-size: 0.8rem;
       }
     }
     textarea {
@@ -64,7 +86,7 @@ const StyledContact = styled.section`
       border-radius: 5px;
       font-size: 0.9rem;
       padding: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       :focus {
         box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
           0px 8px 16px rgba(96, 97, 112, 0.16);
