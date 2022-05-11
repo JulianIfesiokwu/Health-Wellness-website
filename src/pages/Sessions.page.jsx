@@ -9,7 +9,7 @@ const SessionsPage = () => {
 
     const onSubmit = (data) => { 
         console.log(data)
-        reset()
+
     }
 
     return (
@@ -109,7 +109,7 @@ const SessionsPage = () => {
                                 </div>
                                 <div className="input-container">
                                     <p>Appointment date:</p>
-                                    <input type="date" {...register('date', { required: true, valueAsDate: true, })} id="birthday" name="birthday" />
+                                    <input type="date" {...register('date', { required: true })} id="date" name="date" />
                                     <p className="error-message">{errors.date && 'Choose date of appointment' }</p>
                                 </div>
                                 <div className="input-container">
@@ -140,7 +140,7 @@ const SessionsPage = () => {
                                                     type="radio" 
                                                     {...register('payMethod', { required: true })} 
                                                     id="cash" 
-                                                    name="payment" 
+                                                    name="payMethod" 
                                                     value="cash" 
                                                 />
                                             Cash</label>
@@ -151,7 +151,7 @@ const SessionsPage = () => {
                                                 type="radio" 
                                                 {...register('payMethod', { required: true })} 
                                                 id="card" 
-                                                name="payment" 
+                                                name="payMethod" 
                                                 value="card" 
                                             />
                                         Card</label>
