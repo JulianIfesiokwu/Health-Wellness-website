@@ -7,11 +7,7 @@ import { ImCircleRight } from "react-icons/im";
 import  { useForm } from 'react-hook-form'
 
 const Contact = () => {
-    const { register, handleSubmit, reset, formState : { errors }} = useForm({
-        defaultValues: {
-            
-        }
-    })
+    const { register, handleSubmit, reset, formState : { errors }} = useForm()
 
     const onSubmit = (data) => { 
         console.log(data)

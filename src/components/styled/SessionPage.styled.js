@@ -28,6 +28,7 @@ const StyledSessionPage = styled.div`
       display: flex;
       border-top: 1px solid white;
       padding: 1rem 0;
+      gap: 3%;
 
       .about {
         width: 40%;
@@ -72,6 +73,14 @@ const StyledSessionPage = styled.div`
         margin-right: 0.5rem;
         border: none;
         vertical-align: middle;
+      }
+
+      .error-message {
+        display: block;
+        width: 100%;
+        color: #ffcccb;
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
       }
 
       select,
