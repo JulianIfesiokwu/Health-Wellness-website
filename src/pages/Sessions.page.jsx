@@ -12,6 +12,12 @@ const SessionsPage = () => {
 
     }
 
+    const checkDate = (value) => {
+        let requestedDate = Date.parse(value)
+        requestedDate > new Date() ? console.log('yes its possible') : console.log('nope its not')
+        
+    }
+
     return (
         <StyledSessionPage>
             <div className="sessions-form">
@@ -109,8 +115,9 @@ const SessionsPage = () => {
                                 </div>
                                 <div className="input-container">
                                     <p>Appointment date:</p>
-                                    <input type="date" {...register('date', { required: true })} id="date" name="date" />
-                                    <p className="error-message">{errors.date && 'Choose date of appointment' }</p>
+                                    <input type="date" {...register('date', { required: true, validate: value =>  new Date() < Date.parse(value)})} id="date" name="date" />
+                                    <p className="error-message">{errors.date && 'Please choose a future date ' }</p>
+                                {(date) => checkDate(date)}
                                 </div>
                                 <div className="input-container">
                                     <p>Appointment time slot:</p>
