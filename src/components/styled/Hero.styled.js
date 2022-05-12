@@ -10,7 +10,7 @@ const StyledHero = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 900;
     line-height: 65px;
     text-align: center;
@@ -47,16 +47,6 @@ const StyledHero = styled.div`
       color: #155bd5;
       background-color: white;
     }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 768px) {

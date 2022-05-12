@@ -17,10 +17,15 @@ const ContactLanding = styled.div`
 
   h1 {
     width: 60%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    z-index: 6;
-    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 65px;
+    text-align: center;
   }
 
   .all-locations {
@@ -28,6 +33,14 @@ const ContactLanding = styled.div`
     justify-content: space-between;
     gap: 3%;
     z-index: 6;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2rem;
 
     .country {
       width: 30%;

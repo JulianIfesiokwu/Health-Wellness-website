@@ -9,13 +9,7 @@ const SessionsPage = () => {
 
     const onSubmit = (data) => { 
         console.log(data)
-
-    }
-
-    const checkDate = (value) => {
-        let requestedDate = Date.parse(value)
-        requestedDate > new Date() ? console.log('yes its possible') : console.log('nope its not')
-        
+        reset()
     }
 
     return (
@@ -117,7 +111,6 @@ const SessionsPage = () => {
                                     <p>Appointment date:</p>
                                     <input type="date" {...register('date', { required: true, validate: value =>  new Date() < Date.parse(value)})} id="date" name="date" />
                                     <p className="error-message">{errors.date && 'Please choose a future date ' }</p>
-                                {(date) => checkDate(date)}
                                 </div>
                                 <div className="input-container">
                                     <p>Appointment time slot:</p>

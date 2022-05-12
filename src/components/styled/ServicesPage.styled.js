@@ -7,11 +7,11 @@ width: 100%;
     color: white;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 6;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     line-height: 50px;
   }
   p {
@@ -44,16 +44,6 @@ width: 100%;
       color: #155bd5;
       background-color: white;
     }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 768px) {

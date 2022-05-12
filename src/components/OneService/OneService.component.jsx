@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Button from "../styled/Button.styled"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 const OneService = ({massage}) => {
     const {name,id,img,duration,available,type,desc,price} = massage
@@ -12,7 +13,7 @@ const OneService = ({massage}) => {
     }
 
     return (
-        <div className="service-card" key={id}>
+        <motion.div layout className="service-card" key={id}>
             <div className="img-container">
                 <img src={img} alt={name} loading='lazy' />
             </div>
@@ -25,7 +26,7 @@ const OneService = ({massage}) => {
             <p className="price">&#8358;{numberFormatter.format(price)}</p>
             <Link to='/sessions'><Button className="schedule-btn">Schedule</Button></Link>
         </div>
-    </div>
+    </motion.div>
     )
 }
 

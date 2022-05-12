@@ -6,6 +6,7 @@ import { massageTypes } from '../data'
 import OneService from "../components/OneService/OneService.component"
 import { AiOutlineSearch } from "react-icons/ai";
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const allCategories = ['all', ...new Set(massageTypes.map((massage) => massage.type))]
 const allPrices = ['all', ...new Set(massageTypes.map((massage) => massage.price))]
@@ -77,14 +78,14 @@ const ServicesPage = () => {
                                 })}
                             </select>
                         </div>
-                        <div className="search-available">
+                        <motion.div layout className="search-available">
                             <label htmlFor="location">Location: </label>
                             {allLocations.map((location) => {
                                 return (
                                     <button key={location} onClick={() => filterLocation(location)}>{location}</button>
                                 )
                             })}
-                        </div>
+                        </motion.div>
                     </div>
 
             </div>

@@ -4,27 +4,16 @@ const StyledAboutPage = styled.div`
   .heading {
     padding: 0 4rem;
     color: white;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.9;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
   }
 
   h1 {
     width: 60%;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     font-weight: 900;
     line-height: 65px;
     text-align: center;

@@ -12,8 +12,9 @@ const AboutVideo = () => {
         <StyledVideoContainer>
             <video ref={videoRef}
             onCanPlay={() => setPlayBack()}
-            autoPlay='autoplay' loop='loop' >
+            autoPlay='autoplay' loop='loop' muted>
                 <source src={Video} type="video/mp4" />
+                Your browser does not support the video tag.
             </video>
         </StyledVideoContainer>
     )
