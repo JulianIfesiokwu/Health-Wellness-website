@@ -2,6 +2,10 @@
 
 This project is for a fictional massage website created using [Create React App](https://github.com/facebook/create-react-app).
 
+### Screenshot
+
+![](./src/assets/images/Health&Wellness-Website.png)
+
 ## Tools/Libraries Used
 
 \*[React-Icons] 'https://react-icons.github.io/react-icons'
