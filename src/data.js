@@ -23,7 +23,7 @@ export const massageTypes = [
   {
     id: 1,
     name: "Swedish Massage",
-    img: "https://images.unsplash.com/photo-1620051844584-15ac31d5fccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: "https://images.pexels.com/photos/3998009/pexels-photo-3998009.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     duration: 1.5,
     available: ["home", "spa"],
     type: "full body",
@@ -33,7 +33,7 @@ export const massageTypes = [
   {
     id: 2,
     name: "Hot Stone Massage",
-    img: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: "https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["spa"],
     type: "upper body",
@@ -43,7 +43,7 @@ export const massageTypes = [
   {
     id: 3,
     name: "Aromatheraphy Massage",
-    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    img: "https://images.pexels.com/photos/6628599/pexels-photo-6628599.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["home", "spa"],
     type: "upper body",
@@ -53,7 +53,7 @@ export const massageTypes = [
   {
     id: 4,
     name: "Deep Tissue Massage",
-    img: "https://images.unsplash.com/photo-1611073615830-9f76902c10fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    img: "https://images.pexels.com/photos/3998013/pexels-photo-3998013.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["spa"],
     type: "full body",
@@ -63,7 +63,7 @@ export const massageTypes = [
   {
     id: 5,
     name: "Sports Massage",
-    img: "https://images.unsplash.com/photo-1611073615452-4889cb93422e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    img: "https://images.pexels.com/photos/4506213/pexels-photo-4506213.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["home", "spa"],
     type: "affected areas",
@@ -73,7 +73,7 @@ export const massageTypes = [
   {
     id: 6,
     name: "Pretnatal Massage",
-    img: "https://images.unsplash.com/photo-1537673156864-5d2c72de7824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+    img: "https://images.pexels.com/photos/5938433/pexels-photo-5938433.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1,
     available: ["home", "spa"],
     type: "full body",
@@ -83,7 +83,7 @@ export const massageTypes = [
   {
     id: 7,
     name: "Lymphatic Massage",
-    img: "https://images.unsplash.com/photo-1617952986600-802f965dcdbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    img: "https://images.pexels.com/photos/4599426/pexels-photo-4599426.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1,
     available: ["home"],
     type: "affected areas",
@@ -92,8 +92,8 @@ export const massageTypes = [
   },
   {
     id: 8,
-    name: "Trigger point massage",
-    img: "https://images.pexels.com/photos/275768/pexels-photo-275768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "Trigger Point Massage",
+    img: "https://images.pexels.com/photos/3865554/pexels-photo-3865554.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["home"],
     type: "affected areas",
@@ -102,12 +102,22 @@ export const massageTypes = [
   },
   {
     id: 9,
-    name: "Couples massage",
-    img: "https://images.pexels.com/photos/7365434/pexels-photo-7365434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    name: "Couples Massage",
+    img: "https://images.pexels.com/photos/6663378/pexels-photo-6663378.jpeg?auto=compress&cs=tinysrgb&w=600",
     duration: 1.5,
     available: ["spa"],
     type: "full body",
     price: "70000",
+    desc: "A couples massage is a massage that you do with your partner, friend, or family member in the same room. It brings all the benefits of a regular massage plus the chance to enjoy a relaxing experience with a partner.Other treatments, such as pedicures, facials, and body scrubs, are sometimes offered as part of a package.You can usually choose which type of massage you’d like to receive, and you and your partner can each get a different type of massage, depending on your preference and clinic offerings.You’ll be on tables side-by-side, and you’ll each have your own massage therapist working on your body. You can talk during the massage if you wish.",
+  },
+  {
+    id: 10,
+    name: "Thai Massage",
+    img: "https://images.pexels.com/photos/4599399/pexels-photo-4599399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    duration: 1.5,
+    available: ["spa"],
+    type: "full body",
+    price: "100000",
     desc: "A couples massage is a massage that you do with your partner, friend, or family member in the same room. It brings all the benefits of a regular massage plus the chance to enjoy a relaxing experience with a partner.Other treatments, such as pedicures, facials, and body scrubs, are sometimes offered as part of a package.You can usually choose which type of massage you’d like to receive, and you and your partner can each get a different type of massage, depending on your preference and clinic offerings.You’ll be on tables side-by-side, and you’ll each have your own massage therapist working on your body. You can talk during the massage if you wish.",
   },
 ];
