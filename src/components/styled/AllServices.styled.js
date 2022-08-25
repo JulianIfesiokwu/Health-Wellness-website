@@ -41,7 +41,6 @@ const AllServices = styled.div`
     .search-category,
     .search-price,
     .search-available {
-      margin: 0.5rem;
       label {
         margin-right: 1rem;
         margin-bottom: 0.5rem;
@@ -60,16 +59,21 @@ const AllServices = styled.div`
   .listed-services {
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1%;
 
+    .card-link {
+      width: 19%;
+      text-decoration: none;
+      display:flex;
+    }
+
     .service-card {
-      width: 24%;
-      border: 1px solid #d3d3d3;
-      border-radius: 5px;
+      border-radius: 6px;
+      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       margin-bottom: 1rem;
 
       &:hover {
@@ -81,60 +85,56 @@ const AllServices = styled.div`
       .img-container {
         width: 100%;
         img {
+          display: block;
           width: 100%;
           height: auto;
-          object-fit: contain;
-          border-radius: 5px 5px 0 0;
+          border-radius: 6px;
+          transition: all 0.5s ease-in-out;
+        }
+
+        :before {
+          content: "";
+          position: absolute;
+          background: rgba(0, 0, 0, 0.4);
+          border-radius: 5px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+
+        :hover {
+          transform: scale(1.1);
+          overflow: hidden;
         }
       }
 
       .details {
+        position: absolute;
+        bottom: 0;
         padding: 1rem;
         h4 {
           font-size: 1rem;
-          margin-bottom: 0.8rem;
-          color: #155bd5;
+          margin-bottom: 0.2rem;
+          color: #fff;
           font-family: "Open Sans", "sans-serif";
           font-weight: 300;
         }
 
         p {
-          margin-bottom: 0.2rem;
+          font-size: 0.7rem;
+          margin-bottom: 0.8rem;
           line-height: 22px;
-
-          button {
-            color: blue;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-          }
-        }
-
-        .description {
-          font-size: 0.8rem;
-          margin-bottom: 0.5rem;
+          color: #fff;
         }
 
         .price {
-          font-family: "Open Sans", "sans-serif";
+          font-family: 'Roboto Condensed', sans-serif;
+          letter-spacing: 1px;
           font-weight: bold;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           margin-bottom: 1rem;
-        }
-
-        .schedule-btn {
-          font-size: 0.9rem;
-          width: 100%;
-          background-color: #155bd5;
-          color: white;
-
-          &:hover {
-            color: #155bd5;
-            background-color: white;
-          }
-        }
-        .massage-type {
-          font-weight: bold;
+          color: #fff;
         }
       }
     }
@@ -147,8 +147,13 @@ const AllServices = styled.div`
     padding: 2rem;
     .listed-services {
       justify-content: space-between;
+
+      .card-link {
+      width: 50%;
+      text-decoration: none;
+      display:flex;
+    }
       .service-card {
-        width: 32%;
         flex-direction: column;
         padding: 0;
 
