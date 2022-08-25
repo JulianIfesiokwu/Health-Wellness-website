@@ -8,6 +8,7 @@ import ServicesPage from "./pages/Services.page";
 import ContactPage from "./pages/Contact.page";
 import SessionsPage from "./pages/Sessions.page";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.component";
+import DetailedServicePage from "./pages/DetailedService.page";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
           <Route path="/sessions" element={<SessionsPage />}></Route>
+          <Route path="/sessions/:id" element={<DetailedServicePage />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
         </Route>
       </Routes>
