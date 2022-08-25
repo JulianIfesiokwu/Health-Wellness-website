@@ -47,7 +47,7 @@ const AllServices = styled.div`
       }
       select {
         padding: 0.4rem;
-        width: 100%;
+        width: 37%;
       }
       button {
         cursor: pointer;
@@ -75,6 +75,7 @@ const AllServices = styled.div`
       display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
+      overflow: hidden;
 
       &:hover {
         box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
@@ -105,7 +106,6 @@ const AllServices = styled.div`
 
         :hover {
           transform: scale(1.1);
-          overflow: hidden;
         }
       }
 
@@ -114,11 +114,11 @@ const AllServices = styled.div`
         bottom: 0;
         padding: 1rem;
         h4 {
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 700;
           margin-bottom: 0.2rem;
           color: #fff;
-          font-family: "Open Sans", "sans-serif";
-          font-weight: 300;
+          font-family: 'Open Sans', sans-serif;
         }
 
         p {
@@ -149,7 +149,7 @@ const AllServices = styled.div`
       justify-content: space-between;
 
       .card-link {
-      width: 50%;
+      width: 48%;
       text-decoration: none;
       display:flex;
     }
@@ -183,10 +183,15 @@ const AllServices = styled.div`
 
     .listed-services {
       justify-content: space-between;
+
+      .card-link {
+      width: 100%;
+      text-decoration: none;
+      display:flex;
+    }
       .service-card {
         flex-direction: column;
         padding: 0;
-        width: 47%;
 
         .img-container {
           width: 100%;

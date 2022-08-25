@@ -124,6 +124,12 @@ const StyledContact = styled.section`
       .row {
         flex-direction: column;
 
+        .col-1,
+        .col-2,
+        .col-3 {
+          width: 100%;
+        }
+
         input {
           width: 100%;
           display: block;

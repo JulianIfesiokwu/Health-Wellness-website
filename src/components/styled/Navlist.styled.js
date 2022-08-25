@@ -86,6 +86,7 @@ const StyledList = styled.ul`
     a {
       padding-bottom: 0.25rem;
       margin-right: 0;
+      margin-bottom: 1rem;
     }
   }
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ServicesVideo from "../components/Video/ServicesVideo.component";
 import ServicesPageStyled from "../components/styled/ServicesPage.styled";
 import Button from "../components/styled/Button.styled";
@@ -24,9 +24,8 @@ const allLocations = [].concat(
 );
 
 const ServicesPage = () => {
-  const [categories, setCategories] = useState(allCategories);
+  // const [categories, setCategories] = useState(allCategories);
   const [services, setServices] = useState(massageTypes);
-  // const [active, setActive] = useState(false)
 
   const filterServices = (type) => {
     if (type === "all") {
@@ -94,7 +93,7 @@ const ServicesPage = () => {
               </select>
             </div>
             <div className="search-price">
-              <label htmlFor="prices">Maximum Price:&#8358; </label>
+              <label htmlFor="prices">Maximum Price: </label>
               <select
                 name="prices"
                 id="prices"
@@ -102,6 +101,7 @@ const ServicesPage = () => {
                   filterPrice(e.target.value);
                 }}
               >
+                &#8358;
                 {allPrices.map((price) => {
                   return (
                     <option key={price} value={price}>
@@ -130,7 +130,7 @@ const ServicesPage = () => {
           {services.map((massage) => {
             const { id } = massage;
             return (
-              <Link>
+              <Link to={`/services/${id}`} key={id} className="card-link">
                 <OneService key={id} massage={massage} />
               </Link>
             );
