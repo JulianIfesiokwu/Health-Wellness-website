@@ -36,15 +36,15 @@ const StyledSessionPage = styled.div`
 
       .info {
         width: 60%;
+      }
 
-        .two-column {
-          display: flex;
-          gap: 2%;
+      .two-column {
+        display: flex;
+        gap: 2%;
+      }
 
-          .input-container {
-            width: 50%;
-          }
-        }
+      .input-container {
+        width: 50%;
       }
     }
 
@@ -128,10 +128,9 @@ const StyledSessionPage = styled.div`
         }
 
         .two-column {
+          flex-direction: column;
           .input-container {
-            #card-number {
-              width: ;
-            }
+            width: 100%;
           }
         }
       }
