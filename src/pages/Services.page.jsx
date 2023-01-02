@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ServicesVideo from "../components/Video/ServicesVideo.component";
 import ServicesPageStyled from "../components/styled/ServicesPage.styled";
 import Button from "../components/styled/Button.styled";
